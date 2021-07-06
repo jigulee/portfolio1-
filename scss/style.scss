@@ -817,25 +817,25 @@ $mobile: 539px;
 
 			&:nth-of-type(1) {
 				.pic {
-					bottom: 0%;
+					bottom: -10%;
 					transition-delay: 0.1s;
 				}
 			}
 			&:nth-of-type(2) {
 				.pic {
-					bottom: -10%;
+					bottom: -20%;
 					transition-delay: 0.2s;
 				}
 			}
 			&:nth-of-type(3) {
 				.pic {
-					bottom: -20%;
+					bottom: -30%;
 					transition-delay: 0.3s;
 				}
 			}
 			&:nth-of-type(4) {
 				.pic {
-					bottom: -30%;
+					bottom: -40%;
 					transition-delay: 0.4s;
 				}
 			}
