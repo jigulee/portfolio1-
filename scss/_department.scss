@@ -1,0 +1,582 @@
+@charset 'utf-8';
+
+.defartment {
+	padding: 0px 0px 250px;
+	.inner {
+		.wrap {
+			width: 100%;
+			&::after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.div_tree1 {
+				.pic1 {
+					> h1 {
+						font: bold 35px/1 "Roboto";
+						color: #222;
+						letter-spacing: 1px;
+						text-align: center;
+						margin-bottom: 10px;
+					}
+					p {
+						font: bold 14px/1 "Roboto";
+						color: #555;
+						letter-spacing: 1px;
+						text-align: center;
+						margin-bottom: 30px;
+					}
+
+					.pic {
+						float: left;
+						width: 50%;
+						height: 330px;
+						position: relative;
+						cursor: pointer;
+						&::before {
+							content: "";
+							display: block;
+							width: 100%;
+							height: 100%;
+							position: absolute;
+							top: 0;
+							left: 0;
+							background: url(../img/people13.jpg) no-repeat
+								center/cover;
+						}
+
+						&::after {
+							content: "";
+							display: block;
+							width: 100%;
+							height: 100%;
+							position: absolute;
+							top: 0;
+							left: 0;
+							background: linear-gradient(
+								130deg,
+								rgba(200, 250, 150, 0.3),
+								rgba(173, 216, 230, 0.9)
+							);
+							opacity: 0;
+							transition: all 0.5s;
+						}
+
+						div {
+							width: 150px;
+							position: absolute;
+							bottom: 10px;
+							right: 0;
+							z-index: 3;
+							h2 {
+								font: 17px/1 arial;
+								color: #555;
+								text-align: center;
+								margin-bottom: 5px;
+							}
+							span {
+								display: block;
+								font: 14px/1 arial;
+								letter-spacing: 1px;
+								color: #777;
+								text-align: center;
+							}
+						}
+					}
+					.txt {
+						float: left;
+						width: 50%;
+						height: 330px;
+						background: #f5f5f5;
+						margin-bottom: 100px;
+						padding: 40px 35px;
+						box-sizing: border-box;
+
+						span {
+							display: block;
+							font: bold 18px/1 "Roboto";
+							color: #78909c;
+							margin-bottom: 20px;
+						}
+						p {
+							font: 13px/1.8 arial;
+							color: #9ea7aa;
+							text-align: left;
+						}
+						a {
+							display: block;
+							width: 160px;
+							height: 38px;
+							font: bold 13px/38px "Roboto";
+							letter-spacing: 1px;
+							background: #78909c;
+							border-radius: 30px;
+							margin: 0 auto;
+							text-align: center;
+							color: #fff;
+							.fa-long-arrow-alt-right {
+								padding-left: 10px;
+								transition: 0.5s;
+							}
+							&:hover .fa-long-arrow-alt-right {
+								transform: translateX(10px);
+							}
+						}
+					}
+					&:hover {
+						.pic::after {
+							opacity: 0.8;
+						}
+					}
+				}
+
+				.pic2,
+				.pic3,
+				.pic4 {
+					&::after {
+						content: "";
+						display: block;
+						clear: both;
+					}
+					> h1 {
+						font: bold 20px/1 "Roboto";
+						color: #222;
+						letter-spacing: 1px;
+						margin-bottom: 20px;
+						text-align: center;
+					}
+					article {
+						float: left;
+						width: 380px;
+						margin-right: 20px;
+						background: #f5f5f5;
+						padding: 15px;
+						box-sizing: border-box;
+						margin-bottom: 100px;
+						.pic {
+							height: 180px;
+							margin: 0 auto;
+							margin-bottom: 10px;
+							overflow: hidden;
+							cursor: pointer;
+							position: relative;
+							&::after {
+								content: "";
+								display: block;
+								width: 100%;
+								height: 100%;
+								position: absolute;
+								top: 0;
+								left: 0;
+								background: linear-gradient(
+									130deg,
+									rgba(200, 250, 150, 0.3),
+									rgba(173, 216, 230, 0.9)
+								);
+								opacity: 0;
+								transition: all 0.5s;
+							}
+						}
+						.txt {
+							width: 100%;
+							h2 {
+								font: 15px/1 arial;
+								color: #444;
+								letter-spacing: 1px;
+								text-align: center;
+								margin-bottom: 5px;
+							}
+							p {
+								font: 13px/1 arial;
+								text-align: center;
+								color: #4ba3c7;
+								margin-bottom: 5px;
+							}
+							span {
+								font: 13px/1 arial;
+								color: #9ea7aa;
+								letter-spacing: 1px;
+								word-break: break-all;
+							}
+						}
+						.sns {
+							text-align: right;
+							margin-top: 10px;
+							a {
+								margin-left: 10px;
+								color: #888;
+								font-size: 15px;
+							}
+						}
+						&:hover {
+							.pic::after {
+								opacity: 0.8;
+							}
+						}
+					}
+				}
+				.pic2 {
+					article {
+						&:nth-of-type(1) {
+							.pic {
+								background: url(../img/people11.jpg) no-repeat
+									center/cover;
+							}
+						}
+						&:nth-of-type(2) {
+							.pic {
+								background: url(../img/people7.jpg) no-repeat
+									center/cover;
+							}
+						}
+						&:nth-of-type(3) {
+							margin-right: 0;
+							.pic {
+								background: url(../img/people12.jpg) no-repeat
+									center/cover;
+							}
+						}
+					}
+				}
+				.pic3 {
+					article {
+						&:nth-of-type(1) {
+							.pic {
+								background: url(../img/people9.jpg) no-repeat
+									center/cover;
+							}
+						}
+						&:nth-of-type(2) {
+							.pic {
+								background: url(../img/people5.jpg) no-repeat
+									center/cover;
+							}
+						}
+						&:nth-of-type(3) {
+							margin-right: 0;
+							.pic {
+								background: url(../img/people6.jpg) no-repeat
+									center/cover;
+							}
+						}
+					}
+				}
+				.pic4 {
+					article {
+						&:nth-of-type(1) {
+							.pic {
+								background: url(../img/people16.jpg) no-repeat
+									center/cover;
+							}
+						}
+						&:nth-of-type(2) {
+							.pic {
+								background: url(../img/people10.jpg) no-repeat
+									center/cover;
+							}
+						}
+						&:nth-of-type(3) {
+							margin-right: 0;
+							.pic {
+								background: url(../img/people2.jpg) no-repeat
+									center/cover;
+							}
+						}
+						margin-bottom: 130px;
+					}
+				}
+				.pic5 {
+					> h1 {
+						font: bold 33px/1 "Roboto";
+						color: #222;
+						letter-spacing: 1px;
+						text-align: center;
+						margin-bottom: 10px;
+					}
+					p {
+						font: bold 14px/1 "Roboto";
+						color: #555;
+						letter-spacing: 1px;
+						text-align: center;
+						margin-bottom: 30px;
+					}
+
+					.pic {
+						width: 40%;
+						height: 280px;
+						float: left;
+						background: url(../img/people.jpg) no-repeat
+							center/cover;
+					}
+					.txt {
+						float: right;
+						width: 60%;
+						height: 280px;
+						background: #f5f5f5;
+						padding: 80px 30px;
+						box-sizing: border-box;
+
+						h2 {
+							font: bold 18px/1.4 "Roboto";
+							color: #555;
+							text-align: center;
+							letter-spacing: 1px;
+							margin-bottom: 30px;
+						}
+						a {
+							display: block;
+							width: 140px;
+							height: 35px;
+							font: bold 17px/35px "Roboto";
+							color: #fff;
+							text-align: center;
+							letter-spacing: 1px;
+							background: #78909c;
+							border-radius: 30px;
+							margin: 0 auto;
+
+							.fa-long-arrow-alt-right {
+								padding-left: 10px;
+								transition: 0.5s;
+							}
+							&:hover .fa-long-arrow-alt-right {
+								transform: translateX(10px);
+							}
+						}
+					}
+				}
+			}
+
+			.division {
+				position: absolute;
+				top: -9999px;
+				opacity: 0;
+				.div_tree2 {
+					position: absolute;
+					top: -9999px;
+					opacity: 0;
+				}
+			}
+		}
+	}
+}
+
+/* Tablet */
+@media screen and (max-width: $tablet) {
+	.defartment {
+		//padding: 30px 0px 200px;
+		.inner {
+			.wrap {
+				padding-top: 50px;
+				.div_tree1 {
+					.pic1 {
+						h1 {
+							font-size: 30px;
+							margin-bottom: 5px;
+						}
+						p {
+							margin-bottom: 15px;
+						}
+						.pic {
+							float: none;
+							width: 100%;
+							height: 50vh;
+							&::before {
+								background: url(../img/people13-1.jpg) no-repeat
+									center/cover;
+							}
+						}
+						.txt {
+							float: none;
+							width: 100%;
+							height: auto;
+							margin-bottom: 60px;
+							padding: 20px 20px 25px;
+
+							span {
+								font: bold 15px/1.4 "Roboto";
+								letter-spacing: 1px;
+								margin-bottom: 10px;
+							}
+							p {
+								font: 13px/1.4 arial;
+								margin-bottom: 20px;
+							}
+						}
+						margin-bottom: 100px;
+					}
+
+					.pic2,
+					.pic3,
+					.pic4 {
+						article {
+							width: 32%;
+							margin-right: 2%;
+							padding: 10px;
+							.pic {
+								height: 25vh;
+							}
+							.txt {
+								h2 {
+									font-size: 13px;
+								}
+								p {
+									font-size: 12px;
+								}
+								span {
+									font: 12px/1 arial;
+								}
+							}
+							margin-bottom: 80px;
+						}
+					}
+					.pic5 {
+						margin-top: 30px;
+						h1 {
+							font-size: 30px;
+							margin-bottom: 5px;
+						}
+						p {
+							margin-bottom: 15px;
+						}
+						.txt {
+							h2 {
+								font-size: 16px;
+							}
+							a {
+								font-size: 15px;
+								letter-spacing: 2px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Mobile*/
+@media screen and (max-width: $mobile) {
+	.defartment {
+		padding: 20px 0px 120px;
+		.inner {
+			.wrap {
+				h1 {
+					font: bold 25px/1 "Roboto";
+					color: #333;
+					text-align: center;
+					margin-bottom: 5px;
+				}
+				p {
+					font: bold 14px/1 "Roboto";
+					color: #555;
+					text-align: center;
+					margin-bottom: 40px;
+				}
+
+				.div_tree1 {
+					display: none;
+				}
+				.division {
+					position: relative;
+					top: 0;
+					opacity: 1;
+				}
+				.division .div_tree2 {
+					position: relative;
+					top: 0;
+					opacity: 1;
+					margin-bottom: 80px;
+					li span {
+						display: block;
+						width: 50%;
+						height: 40px;
+						background: #1976d2;
+						margin-bottom: 20px;
+						border-radius: 2px;
+						font: bold 12px/40px "Roboto";
+						letter-spacing: 1px;
+						text-align: center;
+						color: #fff;
+
+						&::after {
+							//첫번째 세로줄
+							content: "";
+							display: block;
+							width: 1px;
+							height: calc(60px * 9 - 15px);
+							//li span 높이 40px + marginbottom 20px
+							position: absolute;
+							top: 40px;
+							left: 50px;
+							background: #002f6c;
+						}
+					}
+
+					ul span {
+						background: #42a5f5;
+						color: #f5f5f5;
+						transform: translateX(70px);
+						position: relative;
+						&::after {
+							//두번째 세로줄
+							height: calc(60px * 3 - 14px);
+						}
+						&::before {
+							//가로줄
+							content: "";
+							display: block;
+							width: 20px;
+							height: 1px;
+							position: absolute;
+							top: 25px;
+							left: -20px;
+							background: #002f6c;
+						}
+					}
+
+					ul ul {
+						span {
+							color: #555;
+							background: #e3f2fd;
+							transform: translateX(140px);
+							&::after {
+								display: none;
+							}
+						}
+					}
+					.manager span {
+						background: #90caf9;
+					}
+				}
+
+				h2 {
+					font: bold 22px/1 "Roboto";
+					color: #333;
+					text-align: center;
+					margin-bottom: 20px;
+				}
+
+				a {
+					display: block;
+					width: 130px;
+					height: 35px;
+					font: bold 13px/35px "Roboto";
+					letter-spacing: 1px;
+					background: #333;
+					border-radius: 30px;
+					margin: 0 auto;
+					text-align: center;
+					color: #fff;
+					.fa-long-arrow-alt-right {
+						padding-left: 10px;
+						transition: 0.5s;
+					}
+					&:hover .fa-long-arrow-alt-right {
+						transform: translateX(10px);
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,264 @@
+@charset 'utf-8';
+
+.loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 80px;
+	height: 80px;
+	transform: translate(-50%, -50%);
+	transition: 1s;
+	opacity: 0;
+	z-index: 3;
+
+	&.on {
+		opacity: 1;
+	}
+}
+
+.gallery {
+	padding-bottom: 300px;
+
+	.wrap {
+		position: relative;
+
+		&::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		#search {
+			width: 500px;
+			height: 150px;
+			float: right;
+
+			input[type="text"] {
+				width: 400px;
+				height: 33px;
+				border: none;
+				border-bottom: 2px solid #afc2cb;
+				box-sizing: border-box;
+				font: 16px/30px arial;
+				padding-left: 10px;
+				outline-style: none;
+				background: none;
+			}
+			button {
+				width: 90px;
+				height: 33px;
+				border: 2px solid #afc2cb;
+				font: 17px/30px arial;
+				letter-spacing: 1px;
+				color: #fff;
+				background: #afc2cb;
+				cursor: pointer;
+			}
+		}
+
+		#gallery {
+			opacity: 0;
+			transform: translateY(100px);
+			transition: 1s;
+			position: relative;
+
+			&.on {
+				opacity: 1;
+				transform: translateY(0px);
+			}
+
+			ul {
+				width: 100%;
+				position: absolute;
+				top: 100px;
+				left: 0;
+
+				&::after {
+					content: "";
+					display: block;
+					clear: both;
+				}
+
+				li {
+					float: left;
+					padding: 30px;
+					height: 300px;
+					box-sizing: border-box;
+					width: 33.333%;
+
+					/*
+					&.item-sizer {
+						width: 33.333%;
+						opacity: 0;
+					}
+					&:nth-of-type(7) {
+						height: 600px;
+					}
+					&:nth-of-type(8) {
+						height: 600px;
+					}
+					*/
+
+					.inner {
+						width: 100%;
+						height: 100%;
+						background: #fefefe;
+						position: relative;
+						overflow: hidden;
+
+						> a {
+							display: block;
+							width: 100%;
+							height: 100%;
+							position: absolute;
+							top: 0px;
+							left: 0px;
+							opacity: 1;
+							transition: 0.5s;
+
+							> img {
+								width: 100%;
+								height: 100%;
+								object-fit: cover;
+							}
+						}
+
+						p {
+							position: absolute;
+							top: -120px;
+							opacity: 0;
+							left: 20px;
+							font: bold 14px/1 "Montserrat";
+							color: lightsteelblue;
+							transition: 0.5s;
+						}
+
+						.profile {
+							position: absolute;
+							bottom: -120px;
+							left: 20px;
+							opacity: 0;
+							transition: 0.5s 0.2s;
+							cursor: pointer;
+
+							img {
+								border-radius: 50%;
+							}
+							span {
+								font: bold 14px/1 "맑은 고딕";
+								color: #555;
+								margin-left: 15px;
+								opacity: 0.7;
+								position: relative;
+								top: -18px;
+							}
+						}
+						&:hover {
+							> a {
+								opacity: 0.4;
+							}
+							/*
+							p {
+								top: 20px;
+								opacity: 1;
+							}
+							*/
+							.profile {
+								bottom: 20px;
+								opacity: 1;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Tablet */
+@media screen and (max-width: 1179px) {
+	.gallery {
+		//padding: 0;
+		.inner {
+			box-sizing: border-box;
+			#search {
+				right: 35px;
+				top: 150px;
+				width: 400px;
+
+				input[type="text"] {
+					width: 300px;
+				}
+				button {
+					font: 15px/30px arial;
+				}
+			}
+
+			#gallery {
+				ul {
+					padding: 0;
+					li {
+						width: 50%;
+						padding: 10px;
+
+						&.item-sizer {
+							width: 50%;
+						}
+						&:nth-of-type(2) {
+							width: 100%;
+						}
+						&:nth-of-type(5) {
+							width: 100%;
+						}
+						&:nth-of-type(6) {
+							width: 100%;
+						}
+						&:nth-of-type(11) {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: 539px) {
+	.gallery {
+		padding: 0;
+		.inner {
+			padding: 30px 30px 150px;
+			#search {
+				width: 270px;
+				float: none;
+				margin: 0 auto;
+
+				input[type="text"] {
+					width: 180px;
+					font: 15px/25px arial;
+					padding-left: 5px;
+				}
+				button {
+					width: 80px;
+					height: 33px;
+					font: 14px/30px arial;
+				}
+			}
+
+			#gallery {
+				ul {
+					top: 30px;
+					li {
+						width: 100%;
+						padding: 10px;
+
+						&.item-sizer {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

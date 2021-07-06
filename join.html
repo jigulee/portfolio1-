@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub_layout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7507505fa1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/join.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myForm").myValidation({
+                isTxt: ["id", "email1"],
+                isUsername: ["user"],
+                isCheck: ["gender"],
+                isPwd: ["pwd1", "pwd2"],
+                isPh: ["ph"]
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <header id="sub_header">
+        <div class="inner">
+            <h1><a href="index.html">Find</a></h1>
+            <div class="wrap">
+                <nav class="menuWeb">
+                    <ul id="gnb">
+                        <li>
+                            <a href="department.html">Department<i class="fas fa-chevron-down down"></i></a>
+                            <div class="sub1 sub">
+                                <div class="txtBox">
+                                    <article>
+                                        <h1>About</h1>
+                                        <p>Lorem ipsum dolor sit amet consectet adipisicing elit. Explicabo amet
+                                            accusantium cum. Laborum, beatae magni. Lorem ipsum dolor sit sectetur
+                                            adipisicing elit. Vitae, quibusdam.</p>
+                                    </article>
+                                    <article>
+                                        <h1>Categories</h1>
+                                        <ul>
+                                            <li><a href="#">All</a></li>
+                                            <li><a href="#">Seminal Week</a></li>
+                                            <li><a href="#">Design Studio</a></li>
+                                            <li><a href="#">Visiting Workshop</a></li>
+                                        </ul>
+                                    </article>
+                                </div>
+
+                                <div class="picBox">
+                                    <h1>Projects</h1>
+                                    <article>
+                                        <div class="pic"></div>
+                                        <h2><a href="#">Action! On the real, city</a></h2>
+                                        <p>Lorem ipsum</p>
+                                        <span>Lorem, ipsum dolor sit amet elit.
+                                            <i class="fas fa-chevron-right right"></i></span>
+                                    </article>
+                                    <article>
+                                        <div class="pic"></div>
+                                        <h2><a href="#">Open Village</a></h2>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <span>Lorem, ipsum adipisicing elit.<i
+                                                class="fas fa-chevron-right right"></i></span>
+
+                                    </article>
+                                    <article>
+                                        <div class="pic"></div>
+                                        <h2><a href="#">Product & consumer</a></h2>
+                                        <p>Lorem dolor sit amet.</p>
+                                        <span>Lorem, ipsum adipisicing elit.<i
+                                                class="fas fa-chevron-right right"></i></span>
+
+                                    </article>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="community.html">Community<i class="fas fa-chevron-down down"></i></a>
+                            <div class="sub2 sub">
+                                <ul>
+                                    <li>Community</li>
+                                    <li><a href="#">Review</a></li>
+                                    <li><a href="#">Notice</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                                <div class="pic2">
+                                    <article>
+                                        <div class="pic"></div>
+                                        <div class="txtbox">
+                                            <h2><a href="#">ABOUT US
+                                                    <i class="fas fa-chevron-right right"></i></a>
+                                            </h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+                                                sapiente?</p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <div class="pic"></div>
+                                        <div class="txtbox">
+                                            <h2><a href="#">ABOUT US
+                                                    <i class="fas fa-chevron-right right"></i></a>
+                                            </h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+                                                sapiente?</p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <div class="pic"></div>
+                                        <div class="txtbox">
+                                            <h2><a href="#">ABOUT US
+                                                    <i class="fas fa-chevron-right right"></i></a>
+                                            </h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+                                                sapiente?</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="youtube.html">Youtube<i class="fas fa-chevron-down down"></i></a>
+                            <div class="sub3 sub">
+                                <h1>Youtube</h1>
+                                <ul>
+                                    <li><a href="#">House style<i class="fas fas fa-chevron-right"></i></a></li>
+                                    <li><a href="#">Kitchen<i class="fas fas fa-chevron-right"></i></a></li>
+                                    <li><a href="#">Bathroom<i class="fas fas fa-chevron-right"></i></a></li>
+                                    <li><a href="#">Living room<i class="fas fas fa-chevron-right"></i></a></li>
+                                    <li><a href="#">Bedroom<i class="fas fas fa-chevron-right"></i></a></li>
+                                    <li><a href="#">Children's room<i class="fas fas fa-chevron-right"></i></a></li>
+                                </ul>
+                                <div class="pic"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Gallery<i class="fas fa-chevron-down down"></i></a>
+                            <div class="sub4 sub">
+                                <h1>Gallery</h1>
+                                <article>
+                                    <div class="pic"></div>
+                                    <div class="txtBox">
+                                        <h2><a href="#">Modern Style</a></h2>
+                                        <p>Lorem ipsum dolor sit adipisicing elit.</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="pic"></div>
+                                    <div class="txtBox">
+                                        <h2><a href="#">Luxury Style</a></h2>
+                                        <p>Lorem, ipsum dolor.</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="pic"></div>
+                                    <div class="txtBox">
+                                        <h2><a href="#">Vintage Style</a></h2>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="pic"></div>
+                                    <div class="txtBox">
+                                        <h2><a href="#">Unick Style</a></h2>
+                                        <p>Lorem amet consectetur adipisicing.</p>
+                                    </div>
+                                </article>
+                        </li>
+                        <li>
+                            <a href="location.html">Location<i class="fas fa-chevron-down down"></i></a>
+                            <div class="sub5 sub">
+                                <h1>Location</h1>
+                                <div class="pic">
+                                </div>
+                                <div class="box">
+                                    <article>
+                                        <i class="fas fa-car-side"></i>
+                                        <h2><a href="#">way by Car</a></h2>
+                                        <i class="fas fa-long-arrow-alt-right"></i>
+                                    </article>
+                                    <article>
+                                        <i class="fas fa-subway"></i>
+                                        <h2><a href="#">way by subway</a></h2>
+                                    </article>
+                                    <article>
+                                        <i class="fas fa-walking"></i>
+                                        <h2><a href="#">way by walking</a></h2>
+
+                                    </article>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="util1">
+                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                        <!--<li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>-->
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                    <ul class="util2">
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Info</a></li>
+                        <li><a href="#">Brand</a></li>
+                    </ul>
+                </nav>
+
+                <a href="#" class="btnCall">
+                </a>
+
+                <nav class="menuMo">
+                    <h1>Find</h1>
+                    <ul class="gnbMo">
+                        <li><a href="department.html">Department</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="youtube.html">Youtube</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="location.html">Location</a></li>
+                    </ul>
+                    <ul class="utilMo">
+                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <!--header end-->
+
+    <section class="content join">
+        <div class="inner">
+
+            <figure class="sub_visual">
+                <h1>join</h1>
+            </figure>
+
+            <form action="result.html" method="get" id="myForm">
+                <fieldset>
+                    <legend class="h">회원가입 입력양식폼</legend>
+                    <h2><label for="terms">Terms & Policy</label></h2>
+                    <textarea name="terms" id="terms" cols="30" rows="10"
+                        spellcheck="false">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas itaque ullam maxime consequatur quos. Ipsam molestias fuga consequuntur quisquam optio aliquid reprehenderit est non aliquam provident voluptates vero, ea hic amet magnam culpa minus fugiat earum porro laboriosam soluta cupiditate incidunt. Placeat animi sunt vero porro error inventore voluptate ipsam sequi quisquam tenetur, debitis totam nesciunt adipisci dolore nostrum nulla reprehenderit! Libero fugiat labore placeat rem quisquam? Ullam, dolorum blanditiis modi numquam distinctio officia harum ipsum sed magnam vitae rem, quod aliquam beatae error? Asperiores ex repudiandae voluptas natus ad tempora deserunt nesciunt doloremque odit. Facilis eaque perferendis culpa soluta cupiditate doloribus ex ut eum! Impedit itaque optio error ab fugit. Autem facere quaerat cupiditate labore, debitis corrupti distinctio asperiores ipsum, cum quae totam eius eaque fuga reiciendis quo ducimus expedita aliquam odit illo rem ea omnis eos facilis. Quaerat doloribus blanditiis molestiae ipsa officiis ab, accusamus itaque aut unde nam voluptatem quia. At magnam laborum laboriosam saepe soluta similique itaque tempora! Nostrum, voluptatem nihil molestias laudantium sequi ducimus eius recusandae ea. Nesciunt molestias dicta repellendus quo quaerat odio, esse praesentium autem, iusto natus distinctio nisi asperiores aperiam atque sed omnis totam ab, dolores magnam repudiandae officiis molestiae. Et, suscipit.</textarea>
+
+                    <h2>Member Information</h2>
+                    <table summary="회원의 아이디, 비번,성별, 취미 입력양식폼">
+                        <caption class="h">
+                            회원가입 양식 테이블
+                        </caption>
+                        <tr>
+                            <th><label for="username">이름 *</label></th>
+                            <td><input type="text" id="username" placeholder="이름" name="user"></td>
+                        </tr>
+                        <tr>
+                            <th>성별 *</th>
+
+                            <td><label for="male"><input type="radio" id="male" name="gender" value="male"> 남 </label>
+                                <label for="female"> <input type="radio" id="female" name="gender" value="male"> 여
+                                    <p>* 성별을 선택하세요.</p>
+                                </label>
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <th><label for="id">아이디 *</label></th>
+                            <td><input type="text" id="id" name="id" placeholder="아이디">
+                                <button><a href="#">중복확인</a></button>
+                                <span>* 5글자 이상 입력하세요.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="pwd1">비밀번호 *</label></th>
+                            <td><input type="password" id="pwd1" name="pwd1" placeholder="비밀번호">
+                                <span> *영문, 숫자, 특수문자 포함하여 5글자 이상 입력하세요.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="pwd2">비밀번호 확인 *</label></th>
+                            <td><input type="password" id="pwd2" name="pwd2" placeholder="비밀번호 재입력"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="ph">핸드폰번호 *</label></th>
+                            <td>
+                                <input type="text" id="ph" name="ph" placeholder="010"> -
+                                <input type="text" id="ph" name="ph"> -
+                                <input type="text" id="ph" name="ph">
+                                <button><a>인증 확인</a></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="company">E-mail ID *</label></th>
+                            <td>
+                                <input type="text" name="email1" placeholder="이메일 ID"> @
+                                <input type="text" name="email1" placeholder="이메일 주소">
+                                <select name="email1" id="email2">
+                                    <option value="naver">naver.com</option>
+                                    <option value="nate">nate.com</option>
+                                    <option value="daum">daum.net</option>
+                                    <option value="direct">직접입력</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="date" name="date">생년월일 </label></th>
+                            <td><input type="date" id="date"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="address">주소</label></th>
+                            <td><input type="text" name="address" id="address"><button><a>우편번호 검색</a></button></td>
+                        </tr>
+                        <tr>
+                            <th><label for="houseType">주거형태</label></th>
+                            <td>
+                                <select name="houseType" id="houseType">
+                                    <option value="Korea">주택</option>
+                                    <option value="USA">아파트</option>
+                                    <option value="Canada">빌라</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>마켓팅 수신동의</th>
+                            <td>
+                                <label for="email"> <input type="checkbox" id="email" name="marketing" value="email">
+                                    이메일
+                                </label>
+                                <label for="sms"> <input type="checkbox" id="sms" name="marketing" value="sms">
+                                    SMS
+                                </label>
+                                <span>*마켓팅 수신에 동의하실 경우 이메일, SMS를 통해 이벤트정보를 받아보실 수 있습니다.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="comments">Comments</label></th>
+                            <td><textarea name="comments" id="comments" cols="30" rows="10"></textarea></td>
+                        </tr>
+                        <article><input type="submit" value="JOIN"></article>
+                    </table>
+                </fieldset>
+            </form>
+
+        </div>
+    </section>
+
+    <footer id="sub_footer">
+
+        <div class="upper">
+            <div class="inner">
+                <div class="footerGnb">
+                    <ul>
+                        <li>STORE LOCATOR</li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Store finder</a></li>
+                    </ul>
+                    <ul>
+                        <li>CUSTOMER CARE</li>
+                        <li><a href="#">Exclusive Service</a></li>
+                        <li><a href="#">Orders & Shoping</a></li>
+                        <li><a href="#">Return & Refund</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#"> FAQ</a></li>
+                    </ul>
+                    <ul>
+                        <li>ABOUT US</li>
+                        <li><a href="#">Company Profile</a></li>
+                        <li><a href="#">Corporate Data</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                    <ul>
+                        <li>LEGER</li>
+                        <li><a href="#">Legal Notes</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="emailBox">
+                    <!--<h2>NEWSLETTER SUBSCRIBE</h2>-->
+                    <form action="/" method="POST">
+                        <fieldset>
+                            <legend class="h">뉴스레터 메일</legend>
+                            <label for="email">NEWSLETTER</label>
+                            <label for="female"><input type="radio" id="female" name="gender" value="female">
+                                Women*</label>
+                            <label for="male"><input type="radio" id="male" name="gender" value="male"> Men*</label><br>
+                            <input type="text" id="email" name="email" placeholder="Email*">
+                            <input type="submit" value="SUBSCRIBE">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="loewr">
+            <div class="inner">
+                <address>2021Find &copy; copyright all right reserved.</address>
+                <ul class="sns">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>
