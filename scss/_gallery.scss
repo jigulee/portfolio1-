@@ -85,7 +85,7 @@
 					height: 300px;
 					box-sizing: border-box;
 					width: 33.333%;
-					filter: saturate(90%);
+					//filter: saturate(100%);
 
 					/*
 					&.item-sizer {
@@ -146,8 +146,8 @@
 								border-radius: 50%;
 							}
 							span {
-								font: bold 14px/1 "맑은 고딕";
-								color: #555;
+								font: bold 14px/1 "Roboto";
+								color: lightsteelblue;
 								margin-left: 15px;
 								opacity: 0.7;
 								position: relative;

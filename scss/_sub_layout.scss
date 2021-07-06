@@ -106,8 +106,8 @@
 										left: 0;
 									}
 									p {
-										font: 14px/1.6 arial;
-										color: #222;
+										font: 13px/1.4 arial;
+										color: #555;
 										margin-top: 15px;
 									}
 								}
@@ -128,7 +128,7 @@
 										margin-top: 15px;
 										li a {
 											font: 14px/1 arial;
-											color: #222;
+											color: #333;
 										}
 									}
 								}
@@ -156,47 +156,54 @@
 								position: relative;
 								.pic {
 									width: 100%;
-									height: 130px;
+									height: 120px;
 									margin-top: 23px;
 									cursor: pointer;
+									filter: saturate(150%);
 								}
-								h2 a {
-									font: bold 15px/1 arial;
-									color: #111;
+								h2 {
+									margin-bottom: 5px;
+									a {
+										font: 14px/1 arial;
+										color: lightskyblue;
+									}
 								}
 								p {
-									font: 12px/1 arial;
-									color: #555;
-									margin: 5px 0 25px 0;
+									font: 13px/1 arial;
+									color: #aaa;
+									letter-spacing: 1px;
+									margin-bottom: 20px;
 								}
 								span {
-									font: 14px/1.4 arial;
-									color: #333;
+									font: bold 14px/1 "Roboto";
+									color: #555;
+									letter-spacing: 1px;
 									cursor: pointer;
 									.right {
 										font-size: 13px;
-										color: #666;
-										margin-left: 3px;
+										color: #aaa;
+										margin-left: 5px;
+										transition: 0.5s;
 									}
 								}
 
 								&:nth-of-type(1) {
 									.pic {
-										background: url(../img/8.jpg) no-repeat
-											center/cover;
+										background: url(../img/gallery5.jpg)
+											no-repeat center/cover;
 									}
 								}
 								&:nth-of-type(2) {
 									.pic {
-										background: url(../img/7.jpg) no-repeat
-											center/cover;
+										background: url(../img/gallery6.jpg)
+											no-repeat center/cover;
 									}
 								}
 								&:nth-of-type(3) {
 									margin-right: 0;
 									.pic {
-										background: url(../img/6.jpg) no-repeat
-											center/cover;
+										background: url(../img/gallery7.jpg)
+											no-repeat center/cover;
 									}
 								}
 								&:hover {
@@ -204,26 +211,31 @@
 										transform: translateX(15px);
 									}
 								}
+								&:hover {
+									.right {
+										color: lightblue;
+									}
+								}
 							}
 						}
 					}
 					.sub2 {
 						> ul {
-							width: 150px;
+							width: 145px;
 							float: left;
 							padding: 25px;
 							box-sizing: border-box;
 							li {
-								margin-bottom: 5px;
+								margin-bottom: 10px;
 								&:nth-of-type(1) {
 									padding-bottom: 10px;
 									border-bottom: 2px solid #ccc;
 									letter-spacing: 1px;
 								}
 								a {
-									font: 14px/1px arial;
+									font: bold 14px/1px "Roboto";
 									color: #111;
-									letter-spacing: 1px;
+									letter-spacing: 2px;
 								}
 							}
 						}
@@ -238,36 +250,38 @@
 								overflow: hidden;
 								.pic {
 									width: 100%;
-									height: 200px;
+									height: 17vh;
 									transition: 0.5s;
 									cursor: pointer;
 									transition: 0.3s;
+									filter: opacity(0.9);
 								}
 								&:nth-of-type(1) .pic {
-									background: url(../img/1.jpg) no-repeat
-										center/cover;
+									background: url(../img/community5.jpg)
+										no-repeat center/cover;
 								}
 								&:nth-of-type(2) .pic {
-									background: url(../img/2.jpg) no-repeat
-										center/cover;
+									background: url(../img/community2.jpg)
+										no-repeat center/cover;
 								}
 								&:nth-of-type(3) {
 									margin-right: 0;
 									.pic {
-										background: url(../img/3.jpg) no-repeat
-											center/cover;
+										background: url(../img/community1.jpg)
+											no-repeat center/cover;
 									}
 								}
 								.txtbox {
 									width: 100%;
-									height: 120px;
+									height: 105px;
 									background: #fefefe;
 									transition: 0.3s;
 									> h2 {
 										padding: 5px 0;
 										a {
-											font: normal 16px/1 arial;
+											font: bold 15px/1 "Roboto";
 											color: #555;
+											letter-spacing: 1px;
 										}
 										.right {
 											font-size: 12px;
@@ -276,15 +290,15 @@
 										}
 									}
 									p {
-										font: 14px/1.4 arial;
-										color: #666;
-										//margin-top: 5px;
+										font: 13px/1.2 arial;
+										color: #777;
+										letter-spacing: 1px;
 										cursor: pointer;
 									}
 								}
 								&:hover {
 									.pic {
-										transform: scale(1.1);
+										transform: scale(1.2);
 									}
 									.txtbox {
 										transform: translateY(-20px);
@@ -299,7 +313,7 @@
 					.sub3 {
 						padding: 20px 25px;
 						h1 {
-							font: normal 16px/1 arial;
+							font: normal 15px/1 arial;
 							position: relative;
 							letter-spacing: 1px;
 							&:after {
@@ -309,14 +323,14 @@
 								height: 2px;
 								background: #ccc;
 								position: absolute;
-								top: 30px;
+								top: 25px;
 								left: 0;
 							}
 						}
 						> ul {
 							width: 40%;
 							float: left;
-							margin-top: 30px;
+							margin-top: 35px;
 							li {
 								width: 50%;
 								float: left;
@@ -328,12 +342,13 @@
 									letter-spacing: 1px;
 
 									&:hover .fa-chevron-right {
-										color: #94af76;
+										color: lightskyblue;
 									}
 								}
 								.fa-chevron-right {
 									margin-left: 15px;
 									color: #ccc;
+									transition: 0.5s;
 								}
 								&:hover .fa-chevron-right {
 									transform: translateX(10px);
@@ -344,18 +359,17 @@
 							width: 600px;
 							height: 190px;
 							float: right;
-							background: url(../img/18.jpg) no-repeat
+							background: url(../img/youtube.jpg) no-repeat
 								center/cover;
 							position: relative;
 							top: -10px;
 						}
 					}
-
 					.sub4 {
-						padding: 20px 20px 40px;
+						padding: 20px 20px 20px;
 						box-sizing: border-box;
 						h1 {
-							font: normal 16px/1 arial;
+							font: normal 15px/1 arial;
 							padding-bottom: 10px;
 							border-bottom: 2px solid #ccc;
 							letter-spacing: 1px;
@@ -370,6 +384,7 @@
 								width: 100%;
 								height: 150px;
 								margin-bottom: 20px;
+								filter: saturate(120%);
 								cursor: pointer;
 							}
 
@@ -380,8 +395,9 @@
 								border-bottom: 2px solid #ccc;
 								padding: 10px 0;
 								box-sizing: border-box;
+								cursor: pointer;
 								h2 {
-									font: 15px/1 arial;
+									font: bold 14px/1 "Roboto";
 									margin-bottom: 10px;
 									letter-spacing: 1px;
 									a {
@@ -390,32 +406,38 @@
 								}
 								p {
 									font: 13px/1 arial;
-									color: #555;
+									color: #777;
+									letter-spacing: 1px;
 								}
 							}
 							&:nth-of-type(1) {
 								.pic {
-									background: url(../img/6.jpg) no-repeat
-										center/cover;
+									background: url(../img/gallery1.jpg)
+										no-repeat center/cover;
 								}
 							}
 							&:nth-of-type(2) {
 								.pic {
-									background: url(../img/15.jpg) no-repeat
-										center/cover;
+									background: url(../img/gallery2.jpg)
+										no-repeat center/cover;
 								}
 							}
 							&:nth-of-type(3) {
 								.pic {
-									background: url(../img/14.jpg) no-repeat
-										center/cover;
+									background: url(../img/gallery9.jpg)
+										no-repeat center/cover;
 								}
 							}
 							&:nth-of-type(4) {
 								margin-right: 0;
 								.pic {
-									background: url(../img/13.jpg) no-repeat
-										center/cover;
+									background: url(../img/gallery4.jpg)
+										no-repeat center/cover;
+								}
+							}
+							&:hover {
+								.pic {
+									filter: opacity(0.6);
 								}
 							}
 						}
@@ -424,7 +446,7 @@
 						padding: 25px;
 						box-sizing: border-box;
 						h1 {
-							font: normal 16px/1 arial;
+							font: normal 15px/1 arial;
 							padding-bottom: 10px;
 							border-bottom: 2px solid #ccc;
 							letter-spacing: 1px;
@@ -432,28 +454,29 @@
 						}
 						.pic {
 							width: 46%;
-							height: 190px;
+							height: 200px;
 							float: left;
 							cursor: pointer;
-							background: url(../img/news3.jpg) no-repeat
+							background: url(../img/contact.jpg) no-repeat
 								center/cover;
+							filter: drop-shadow(6px 6px lightblue);
 							margin-right: 2%;
-							opacity: 0.9;
+							opacity: 0.8;
 						}
 						.contact {
 							width: 30%;
 							float: left;
 							margin-right: 1%;
 							h2 {
-								font: bold 20px/1 "Roboto";
+								font: bold 17px/1 "Roboto";
 								padding-top: 2px;
 							}
 							input[type="text"] {
 								width: 90%;
-								font: bold 11px/1 "Roboto";
+								font: bold 12px/1 "Roboto";
 								border: none;
-								padding: 20px 10px 4px;
-								border-bottom: 1px solid #ccc;
+								padding: 22px 8px 3px;
+								border-bottom: 1px solid #bbb;
 								letter-spacing: 1px;
 								outline: 0;
 							}
@@ -461,33 +484,35 @@
 								width: 96%;
 								font: bold 12px/1 "Roboto";
 								border: none;
-								padding: 8px;
-								margin-top: 23px;
-								color: #fff;
-								letter-spacing: 1px;
-								background: #b1bfca;
+								padding: 11px;
+								margin-top: 30px;
+								color: lightblue;
+								letter-spacing: 2px;
+								background: #f5f5f5;
+								border-radius: 2px;
 								cursor: pointer;
 							}
 						}
 						.info {
-							width: 18%;
-							height: 170px;
+							width: 20%;
+							height: 180px;
 							float: right;
-							background: #b1bfca;
-							padding: 20px 0 20px 25px;
+							border: 2px solid lightblue;
+							padding: 20px;
+							border-radius: 2px;
 							box-sizing: border-box;
 							position: relative;
 							margin-top: 20px;
 							ul {
 								li {
 									a {
-										font: bold 11px/1 "Roboto";
-										color: #fff;
-										letter-spacing: 2px;
+										font: bold 12px/1 "Roboto";
+										color: #333;
+										letter-spacing: 1px;
 										.con {
 											font-size: 18px;
-											color: #fff;
-											margin-right: 5px;
+											color: #888;
+											margin-right: 7px;
 											position: relative;
 											top: 3px;
 										}
@@ -498,16 +523,16 @@
 									content: "Info";
 									display: block;
 									width: 70px;
-									height: 33px;
-									background: #888;
+									height: 30px;
+									background: #f5f5f5;
 									position: absolute;
-									top: -17px;
-									left: -50px;
-									font: 20px/33px "Roboto";
-									color: #fff;
+									top: -20px;
+									left: -30px;
+									font: bold 16px/30px "Roboto";
+									color: lightblue;
 									text-align: center;
 									box-sizing: border-box;
-									border-radius: 3px;
+									border-radius: 2px;
 								}
 							}
 						}
