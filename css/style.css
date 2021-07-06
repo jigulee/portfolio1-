@@ -2362,19 +2362,31 @@ textarea {
   .location .wrap #map {
     width: 100%;
     height: 400px; }
-  .location .wrap .box {
+  .location .wrap .box article {
+    height: 180px; }
+    .location .wrap .box article .fa-car-side,
+    .location .wrap .box article .fa-subway,
+    .location .wrap .box article .fa-walking {
+      font-size: 50px;
+      top: 50px; }
+    .location .wrap .box article:after {
+      height: 100px; }
+    .location .wrap .box article h3 {
+      font: 14px/1 arial;
+      top: 120px; }
+  .location .wrap .box2 {
     width: 100%; }
-    .location .wrap .box article {
+    .location .wrap .box2 article {
       width: calc(100% / 3);
       padding: 20px; }
-      .location .wrap .box article h3 {
+      .location .wrap .box2 article h3 {
         margin-bottom: 30px; }
-        .location .wrap .box article h3::after {
-          width: 70%;
+        .location .wrap .box2 article h3::after {
+          width: 30%;
           bottom: -15px; }
-      .location .wrap .box article ul li:nth-of-type(1) {
+      .location .wrap .box2 article ul li:nth-of-type(1) {
         height: 75px; }
-      .location .wrap .box article ul li p {
+      .location .wrap .box2 article ul li p {
         font: 14px/1.4 arial;
         margin-top: 5px;
         margin-bottom: 10px; } }
@@ -2388,9 +2400,9 @@ textarea {
       .location .wrap .pic .pic2 {
         display: none; }
     .location .wrap h2 {
-      font: bold 22px/1 "맑은 고딕";
-      margin-top: 20px;
-      margin-bottom: 10px; }
+      font-size: 18px;
+      margin-top: 70px;
+      margin-bottom: 30px; }
     .location .wrap span {
       font: 12px/1.2 arial;
       margin-bottom: 30px; }
@@ -2402,29 +2414,43 @@ textarea {
       margin-bottom: 30px; }
     .location .wrap .box article {
       width: 100%;
+      height: 150px;
+      margin-bottom: 20px; }
+      .location .wrap .box article .fa-car-side,
+      .location .wrap .box article .fa-subway,
+      .location .wrap .box article .fa-walking {
+        font-size: 35px;
+        bottom: -20px; }
+      .location .wrap .box article:after {
+        height: 87px; }
+      .location .wrap .box article h3 {
+        font: 11px/1 arial;
+        top: 100px; }
+    .location .wrap .box2 article {
+      width: 100%;
       float: none;
       border: 1px solid #ccc;
       padding: 10px 10px 5px; }
-      .location .wrap .box article h3 {
+      .location .wrap .box2 article h3 {
         font: 13px/1 "맑은 고딕";
         margin-bottom: 10px; }
-        .location .wrap .box article h3::after {
+        .location .wrap .box2 article h3::after {
           width: 30%;
           height: 2px;
           background: #888;
           bottom: -10px; }
-      .location .wrap .box article ul li {
+      .location .wrap .box2 article ul li {
         font: 13px/1 arial; }
-        .location .wrap .box article ul li:nth-of-type(1) {
+        .location .wrap .box2 article ul li:nth-of-type(1) {
           height: auto; }
-        .location .wrap .box article ul li p {
+        .location .wrap .box2 article ul li p {
           font: 12px/1.2 arial;
           color: #555;
           margin-top: 2px;
           margin-bottom: 5px; }
-      .location .wrap .box article:nth-of-type(2) {
+      .location .wrap .box2 article:nth-of-type(2) {
         border-left: 1px solid #ccc; }
-      .location .wrap .box article:nth-of-type(3) {
+      .location .wrap .box2 article:nth-of-type(3) {
         border-left: 1px solid #ccc; } }
 .join {
   padding: 0 0 250px; }
