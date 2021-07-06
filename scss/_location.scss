@@ -347,9 +347,9 @@
 				}
 			}
 			h2 {
-				font-size: 18px;
+				font-size: 19px;
 				margin-top: 70px;
-				margin-bottom: 30px;
+				margin-bottom: 40px;
 			}
 
 			span {
@@ -360,7 +360,7 @@
 			.branch {
 				li a {
 					height: 35px;
-					font: bold 13px/35px "arial";
+					font: bold 12px/35px "arial";
 				}
 			}
 
@@ -391,6 +391,7 @@
 			}
 
 			.box2 {
+				margin-top: 580px;
 				article {
 					width: 100%;
 					float: none;
@@ -401,7 +402,7 @@
 						font: 13px/1 "맑은 고딕";
 						margin-bottom: 10px;
 						&::after {
-							width: 30%;
+							width: 20%;
 							height: 2px;
 							background: #888;
 							bottom: -10px;
