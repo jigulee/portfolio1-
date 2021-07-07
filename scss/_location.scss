@@ -12,7 +12,7 @@
 		.pic {
 			width: 100%;
 			height: 350px;
-			background: url(../img/13.jpg) no-repeat center/cover;
+			background: url(../img/community1.jpg) no-repeat center/cover;
 			position: relative;
 			filter: saturate(80%);
 			margin-bottom: 120px;
@@ -163,15 +163,16 @@
 						width: 100%;
 						display: block;
 						height: 40px;
-						font: bold 14px/40px "arial";
+						font: bold 15px/40px "Roboto";
 						color: #aaa;
+						letter-spacing: 2px;
 						text-align: center;
 						position: relative;
 						//border-bottom: 2px solid lightblue;
 						&::after {
 							content: "";
 							display: block;
-							width: 90px;
+							width: 110px;
 							height: 2px;
 							background: #aaa;
 							position: absolute;
