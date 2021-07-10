@@ -81,24 +81,25 @@
 
 				li {
 					float: left;
-					padding: 30px;
-					height: 300px;
+					padding: 25px;
+					height: 270px;
 					box-sizing: border-box;
 					width: 33.333%;
 					//filter: saturate(100%);
 
-					/*
 					&.item-sizer {
 						width: 33.333%;
 						opacity: 0;
 					}
 					&:nth-of-type(7) {
-						height: 600px;
+						height: 540px;
 					}
 					&:nth-of-type(8) {
-						height: 600px;
+						height: 540px;
 					}
-					*/
+					&:nth-of-type(10) {
+						width: 66.666%;
+					}
 
 					.inner {
 						width: 100%;

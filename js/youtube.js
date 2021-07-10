@@ -73,8 +73,8 @@
             var imgSrc = data.snippet.thumbnails.high.url;
             var vidId = data.snippet.resourceId.videoId;
 
-            if (txt.length > 200) {
-                txt = txt.substr(0, 200) + "...";
+            if (txt.length > 110) {
+                txt = txt.substr(0, 110) + " [...]";
             }
 
             this.frame
