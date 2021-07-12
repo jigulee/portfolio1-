@@ -82,7 +82,7 @@
 				li {
 					float: left;
 					padding: 25px;
-					height: 270px;
+					height: 280px;
 					box-sizing: border-box;
 					width: 33.333%;
 					//filter: saturate(100%);
@@ -92,10 +92,10 @@
 						opacity: 0;
 					}
 					&:nth-of-type(7) {
-						height: 540px;
+						height: 560px;
 					}
 					&:nth-of-type(8) {
-						height: 540px;
+						height: 560px;
 					}
 					&:nth-of-type(10) {
 						width: 66.666%;
@@ -212,10 +212,7 @@
 						&:nth-of-type(5) {
 							width: 100%;
 						}
-						&:nth-of-type(6) {
-							width: 100%;
-						}
-						&:nth-of-type(11) {
+						&:nth-of-type(10) {
 							width: 100%;
 						}
 					}
