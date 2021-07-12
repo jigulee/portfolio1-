@@ -1922,58 +1922,49 @@ textarea {
 /* Tablet */
 @media screen and (max-width: 1179px) {
   .youtube .inner {
-    padding: 50px 30px 100px;
+    padding: 30px 30px 170px;
     box-sizing: border-box; }
     .youtube .inner #vidGallery article {
       width: 48%;
-      height: 480px;
       margin-right: 4%; }
-      .youtube .inner #vidGallery article:nth-of-type(1), .youtube .inner #vidGallery article:nth-of-type(3), .youtube .inner #vidGallery article:nth-of-type(5), .youtube .inner #vidGallery article:nth-of-type(7), .youtube .inner #vidGallery article:nth-of-type(9), .youtube .inner #vidGallery article:nth-of-type(11) {
+      .youtube .inner #vidGallery article:nth-of-type(3), .youtube .inner #vidGallery article:nth-of-type(6) {
         margin-right: 4%; }
-      .youtube .inner #vidGallery article:nth-of-type(2), .youtube .inner #vidGallery article:nth-of-type(4), .youtube .inner #vidGallery article:nth-of-type(6), .youtube .inner #vidGallery article:nth-of-type(8), .youtube .inner #vidGallery article:nth-of-type(10), .youtube .inner #vidGallery article:nth-of-type(12) {
-        margin-right: 0; }
-      .youtube .inner #vidGallery article .pic {
-        height: 50%; }
+      .youtube .inner #vidGallery article:nth-of-type(9) {
+        display: none; }
+      .youtube .inner #vidGallery article:nth-of-type(2n) {
+        margin-right: 0%; }
+      .youtube .inner #vidGallery article .picbox .pic {
+        height: 160px; }
       .youtube .inner #vidGallery article .con > h2 {
-        height: 30%;
-        font: bold 14px/1.3 "Playfair Display";
+        height: 60px;
+        font: bold 13px/1.4 "Playfair Display";
         margin-bottom: 10px; }
       .youtube .inner #vidGallery article .con p {
-        font: 13px/1.4 "Playfair Display";
-        height: 120px;
-        margin-bottom: 0; }
+        height: 100px; }
       .youtube .inner #vidGallery article .con span {
         font: 14px/1 "Playfair Display"; }
       .youtube .inner #vidGallery article .con a {
-        font: bold 14px/1px "Playfair Display";
+        font: bold 13px/1px "Playfair Display";
         bottom: -5px; } }
 /* Mobile */
 @media screen and (max-width: 539px) {
   .youtube .inner {
-    padding: 0px 30px 70px; }
+    padding: 0px 30px 100px; }
     .youtube .inner #vidGallery {
       padding-top: 30px; }
       .youtube .inner #vidGallery article {
         width: 100%;
-        height: 370px;
         margin-right: 0%; }
         .youtube .inner #vidGallery article:nth-of-type(1), .youtube .inner #vidGallery article:nth-of-type(3), .youtube .inner #vidGallery article:nth-of-type(5), .youtube .inner #vidGallery article:nth-of-type(7), .youtube .inner #vidGallery article:nth-of-type(9), .youtube .inner #vidGallery article:nth-of-type(11) {
           margin-right: none; }
-        .youtube .inner #vidGallery article .pic {
-          height: 40%; }
+        .youtube .inner #vidGallery article .picbox .pic {
+          height: 150px; }
         .youtube .inner #vidGallery article .con > h2 {
-          height: 25px;
-          font: bold 13px/1.3 "Playfair Display";
-          margin-top: 20px;
-          height: 40px; }
+          height: 45px;
+          font: bold 12px/1.4 "Playfair Display";
+          margin-bottom: 10px; }
         .youtube .inner #vidGallery article .con p {
-          font: 12px/1.2 "Playfair Display";
-          height: 100px;
-          margin: 10px 0 5px; }
-        .youtube .inner #vidGallery article .con span {
-          font: 13px/1 "Playfair Display"; }
-        .youtube .inner #vidGallery article .con a {
-          display: none; } }
+          height: 80px; } }
 .loading {
   position: fixed;
   top: 50%;
