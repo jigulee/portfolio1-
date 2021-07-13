@@ -490,6 +490,7 @@ $mobile: 539px;
 	padding: 100px 0;
 	background: #f5f5f5;
 	margin-top: 250px;
+	margin-bottom: 100px;
 	.inner {
 		width: 1180px;
 		margin: 0 auto;
@@ -549,7 +550,7 @@ $mobile: 539px;
 
 #banner {
 	width: 100%;
-	padding: 200px 0 0;
+	padding: 100px 0 100px;
 	.inner {
 		width: 1180px;
 		margin: 0 auto;
@@ -641,7 +642,7 @@ $mobile: 539px;
 
 #banner2 {
 	width: 100%;
-	padding: 200px 0 0;
+	padding: 100px 0 100px;
 	.inner {
 		//width: 1180px;
 		//margin: 0 auto;
@@ -700,7 +701,7 @@ $mobile: 539px;
 
 #news {
 	width: 100%;
-	padding: 180px 0 300px;
+	padding: 100px 0 300px;
 	.inner {
 		width: 1180px;
 		margin: 0 auto;
@@ -837,7 +838,7 @@ $mobile: 539px;
 					background: #fff;
 					border-bottom: 3px solid #e2f1f8;
 					font: 15px/1 "맑은 고딕";
-					color: #444;
+					color: #888;
 					letter-spacing: 1px;
 					cursor: pointer;
 					transition: 0.5s;
@@ -1029,7 +1030,7 @@ $mobile: 539px;
 			display: block;
 			width: 10px;
 			height: 10px;
-			background: #555;
+			background: #b1bfca;
 			border-radius: 5px;
 			transition: 0.5s;
 
