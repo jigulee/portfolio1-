@@ -13,6 +13,7 @@
     <script defer src="js/main.js"></script>
     <script defer src="js/visual.js"></script>
     <script defer src="js/main_toggle.js"></script>
+    <script defer src="js/main_scroll.js"></script>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
     <!-- skipNavi end -->
 
 
-    <header id="header">
+    <header id="header" class="myScroll">
         <div class="inner">
             <h1><a href="index.html">Find</a></h1>
             <div class="wrap">
@@ -130,7 +131,7 @@
         </a>
     </figure>
 
-    <section id="brand">
+    <section id="brand" class="myScroll">
         <div class="inner">
             <div class="wrap">
                 <div class="contents1">
@@ -147,7 +148,7 @@
                         <span>Lorem, ipsum.</span>
                     </article>
                     <article>
-                        <h2>1000</h2>
+                        <h2>1,500</h2>
                         <span>Lorem, ipsum.</span>
                     </article>
                     <article>
@@ -160,13 +161,13 @@
         </div>
     </section>
 
-    <section id="banner">
+    <section id="banner" class="myScroll">
         <div class="inner">
             <div class="wrap">
                 <div class="contents3"></div>
                 <div class="contents4">
-                    <span>Lorem, ipsum.</span>
-                    <h1>Lorem, ipsum dolor.</h1>
+                    <span>Brand Story</span>
+                    <h1>Brand Identity</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id libero quidem excepturi perferendis
                         aperiam, quae, eaque eius quisquam aspernatur quos fuga mollitia exercitationem autem expedita
                         vero error. Eligendi, repellat non.</p>
@@ -192,13 +193,13 @@
         </div>
     </section>
 
-    <section id="banner2">
+    <section id="banner2" class="myScroll">
         <div class="inner">
             <div class="wrap">
                 <div class="contents6"></div>
                 <div class="contents7">
-                    <span>Lorem, ipsum.</span>
-                    <h1>Lorem, ipsum dolor.</h1>
+                    <span>Our Services</span>
+                    <h1>Contact Us</h1>
                     <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto repellendus nobis quidem facilis
                         neque rerum.</h2>
                     <p><a href="#">Lorem, ipsum
@@ -220,9 +221,9 @@
         </div>
     </section>
 
-    <section id="news">
+    <section id="news" class="myScroll">
         <div class="inner">
-            <h1>NEWS</h1>
+            <h1>Latest News</h1>
             <div class="wrap">
                 <div class="newsbox">
                     <article>
@@ -353,6 +354,14 @@
         </div>
     </footer>
     <!-- footer end -->
+
+    <ul id="navi">
+        <li><a href="#header" class="on"></a></li>
+        <li><a href="#brand"></a></li>
+        <li><a href="#banner"></a></li>
+        <li><a href="#banner2"></a></li>
+        <li><a href="#news"></a></li>
+    </ul>
 </body>
 
 </html>

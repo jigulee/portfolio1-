@@ -3070,7 +3070,7 @@ textarea {
       transition: 1.5s; }
       #visual .list li .pic {
         width: 100%;
-        height: 90vh;
+        height: 80vh;
         position: absolute;
         transition: 2s;
         cursor: pointer; }
@@ -3086,7 +3086,7 @@ textarea {
           font: normal 18px/1 "Montserrat";
           letter-spacing: 1px;
           position: relative;
-          top: 33%;
+          top: 37%;
           right: -15px;
           transform: rotate(90deg);
           transition: 0.5s;
@@ -3217,7 +3217,7 @@ textarea {
           letter-spacing: 2px;
           margin-bottom: 40px; }
         #brand .inner .wrap .contents1 p {
-          font: 14px/1.6 "Quicksand";
+          font: 14px/1.8 "Quicksand";
           color: #555;
           margin-bottom: 20px; }
         #brand .inner .wrap .contents1 article {
@@ -3225,11 +3225,12 @@ textarea {
           float: left;
           margin-top: 30px; }
           #brand .inner .wrap .contents1 article h2 {
-            font: bold 20px/1 "Quicksand";
+            font: bold 20px/1 "Roboto";
             color: skyblue;
+            letter-spacing: 1px;
             margin-bottom: 5px; }
           #brand .inner .wrap .contents1 article > span {
-            font: bold 14px/1 "Quicksand";
+            font: 14px/1 "arial";
             color: #999;
             letter-spacing: 1px; }
       #brand .inner .wrap .contents2 {
@@ -3268,7 +3269,7 @@ textarea {
           margin-bottom: 10px; }
         #banner .inner .wrap .contents4 h1 {
           font: bold 30px/1 "Roboto";
-          letter-spacing: 1px;
+          letter-spacing: 2px;
           margin-bottom: 40px; }
         #banner .inner .wrap .contents4 p {
           font: 14px/2 "Quicksand";
@@ -3324,7 +3325,7 @@ textarea {
       width: 50%;
       float: left;
       height: 480px;
-      background: url(../img/2.jpg) no-repeat center/cover; }
+      background: url(../img/3.jpg) no-repeat center/cover; }
     #banner2 .inner .wrap .contents7 {
       width: 50%;
       float: left;
@@ -3370,6 +3371,7 @@ textarea {
       margin-bottom: 10px; }
     #news .inner h1 {
       font: bold 30px/1 "Roboto";
+      letter-spacing: 2px;
       text-align: center;
       margin-bottom: 50px; }
     #news .inner .wrap {
@@ -3386,17 +3388,28 @@ textarea {
           float: left;
           margin-right: 20px;
           margin-bottom: 20px;
-          cursor: pointer; }
+          cursor: pointer;
+          transition: 0.5s;
+          transform: translateY(100px);
+          opacity: 0; }
           #news .inner .wrap .newsbox article:nth-of-type(even) {
             margin-right: 0; }
-          #news .inner .wrap .newsbox article:nth-of-type(1) .pic::before {
-            background-image: url(../img/gallery4.jpg); }
-          #news .inner .wrap .newsbox article:nth-of-type(2) .pic::before {
-            background-image: url(../img/gallery8.jpg); }
-          #news .inner .wrap .newsbox article:nth-of-type(3) .pic::before {
-            background-image: url(../img/gallery9.jpg); }
-          #news .inner .wrap .newsbox article:nth-of-type(4) .pic::before {
-            background-image: url(../img/1.jpg); }
+          #news .inner .wrap .newsbox article:nth-of-type(1) {
+            transition-delay: 0.1s; }
+            #news .inner .wrap .newsbox article:nth-of-type(1) .pic::before {
+              background-image: url(../img/gallery4.jpg); }
+          #news .inner .wrap .newsbox article:nth-of-type(2) {
+            transition-delay: 0.2s; }
+            #news .inner .wrap .newsbox article:nth-of-type(2) .pic::before {
+              background-image: url(../img/gallery8.jpg); }
+          #news .inner .wrap .newsbox article:nth-of-type(3) {
+            transition-delay: 0.3s; }
+            #news .inner .wrap .newsbox article:nth-of-type(3) .pic::before {
+              background-image: url(../img/gallery9.jpg); }
+          #news .inner .wrap .newsbox article:nth-of-type(4) {
+            transition-delay: 0.4s; }
+            #news .inner .wrap .newsbox article:nth-of-type(4) .pic::before {
+              background-image: url(../img/1.jpg); }
           #news .inner .wrap .newsbox article .pic {
             float: left;
             width: 220px;
@@ -3482,7 +3495,10 @@ textarea {
             position: absolute;
             top: 40%;
             right: 36px;
-            transition: 5s; }
+            transition: 1s; }
+          #news .inner .wrap dl dt:hover {
+            background: #e2f1f8;
+            opacity: 0.8; }
           #news .inner .wrap dl dt.on::before {
             display: none; }
         #news .inner .wrap dl dd {
@@ -3493,6 +3509,9 @@ textarea {
           color: #888;
           letter-spacing: 1px;
           display: none; }
+  #news.on .inner .wrap article {
+    opacity: 1;
+    transform: translateY(0); }
 
 /*footer layout*/
 #footer {
@@ -3587,6 +3606,25 @@ textarea {
           #footer .loewr .inner .sns li a {
             font: 12px/1 arial;
             color: #888; }
+
+/*scroll btn*/
+#navi {
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%); }
+  #navi li {
+    margin: 20px 0; }
+    #navi li a {
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: #555;
+      border-radius: 5px;
+      transition: 0.5s; }
+      #navi li a.on {
+        background: #e2f1f8;
+        height: 60px; }
 
 /* Tablet */
 @media screen and (max-width: 1179px) {
