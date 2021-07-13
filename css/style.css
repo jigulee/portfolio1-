@@ -163,7 +163,8 @@ textarea {
               margin-bottom: 5px; }
               #sub_header .inner .wrap .menuWeb #gnb .sub1 .picBox article h2 a {
                 font: 14px/1 arial;
-                color: lightskyblue; }
+                color: lightskyblue;
+                opacity: 0.7; }
             #sub_header .inner .wrap .menuWeb #gnb .sub1 .picBox article p {
               font: 13px/1 arial;
               color: #aaa;
@@ -180,7 +181,7 @@ textarea {
                 margin-left: 5px;
                 transition: 0.5s; }
             #sub_header .inner .wrap .menuWeb #gnb .sub1 .picBox article:nth-of-type(1) .pic {
-              background: url(../img/gallery5.jpg) no-repeat center/cover; }
+              background: url(../img/gallery4.jpg) no-repeat center/cover; }
             #sub_header .inner .wrap .menuWeb #gnb .sub1 .picBox article:nth-of-type(2) .pic {
               background: url(../img/gallery6.jpg) no-repeat center/cover; }
             #sub_header .inner .wrap .menuWeb #gnb .sub1 .picBox article:nth-of-type(3) {
@@ -362,7 +363,7 @@ textarea {
           height: 200px;
           float: left;
           cursor: pointer;
-          background: url(../img/contact.jpg) no-repeat center/cover;
+          background: url(../img/2.jpg) no-repeat center/cover;
           margin-right: 2%;
           opacity: 0.8; }
         #sub_header .inner .wrap .menuWeb #gnb .sub5 .contact {
@@ -382,22 +383,20 @@ textarea {
             outline: 0; }
           #sub_header .inner .wrap .menuWeb #gnb .sub5 .contact input[type="submit"] {
             width: 96%;
-            font: bold 12px/1 "Roboto";
+            font: bold 13px/1 "Roboto";
             border: none;
             padding: 11px;
             margin-top: 30px;
-            color: lightblue;
+            color: #aaa;
             letter-spacing: 2px;
             background: #f5f5f5;
-            border-radius: 2px;
             cursor: pointer; }
         #sub_header .inner .wrap .menuWeb #gnb .sub5 .info {
           width: 20%;
           height: 180px;
           float: right;
-          border: 2px solid lightblue;
+          border: 3px solid #e2f1f8;
           padding: 20px;
-          border-radius: 2px;
           box-sizing: border-box;
           position: relative;
           margin-top: 20px; }
@@ -422,11 +421,11 @@ textarea {
             position: absolute;
             top: -20px;
             left: -30px;
-            font: bold 16px/30px "Roboto";
-            color: lightblue;
+            font: bold 15px/30px "Roboto";
+            letter-spacing: 1px;
+            color: #aaa;
             text-align: center;
-            box-sizing: border-box;
-            border-radius: 2px; }
+            box-sizing: border-box; }
       #sub_header .inner .wrap .util1 {
         position: absolute;
         top: -10px;
@@ -3046,8 +3045,8 @@ textarea {
         font: 50px "Montserrat";
         color: #777; }
       #visual .bg .txt p {
-        font: bold 14px/1.4 "Montserrat";
-        color: #5666; }
+        font: 14px/1.4 "Montserrat";
+        color: #555; }
   #visual .mask {
     width: 100%;
     height: 2500px;
@@ -3095,32 +3094,36 @@ textarea {
         #visual .list li .pic img {
           width: 100%;
           height: 100%;
-          object-fit: cover;
-          filter: saturate(50%); }
+          object-fit: cover; }
       #visual .list li:nth-of-type(1) .pic {
-        bottom: -35%;
+        bottom: -20%;
         transition-delay: 0.1s; }
       #visual .list li:nth-of-type(2) .pic {
-        bottom: -45%;
+        bottom: -25%;
         transition-delay: 0.2s; }
       #visual .list li:nth-of-type(3) .pic {
-        bottom: -35%;
+        bottom: -20%;
         transition-delay: 0.3s; }
       #visual .list li:nth-of-type(4) .pic {
-        bottom: -45%;
+        bottom: -25%;
         transition-delay: 0.4s; }
       #visual .list li:hover {
-        transform: scale(1.1); }
-        #visual .list li:hover img {
-          filter: saturate(130%); }
-        #visual .list li:hover:nth-of-type(1) {
-          background: #eceff1; }
-        #visual .list li:hover:nth-of-type(2) {
-          background: #e2f1f8; }
-        #visual .list li:hover:nth-of-type(3) {
-          background: #eceff1; }
-        #visual .list li:hover:nth-of-type(4) {
-          background: #e2f1f8; }
+        /*
+        &:nth-of-type(1) {
+        	background: #eceff1;
+        }
+        &:nth-of-type(2) {
+        	background: #e2f1f8;
+        }
+        &:nth-of-type(3) {
+        	background: #eceff1;
+        }
+        &:nth-of-type(4) {
+        	background: #e2f1f8;
+        }
+        */ }
+        #visual .list li:hover .pic {
+          transform: scale(1.1); }
     #visual .list.on li {
       transform: translateY(-200%);
       border-right: 0;
@@ -3188,8 +3191,9 @@ textarea {
     bottom: 0; } }
 #brand {
   width: 100%;
-  padding: 100px 0 100px;
-  background: #f5f5f5; }
+  padding: 100px 0;
+  background: #f5f5f5;
+  margin-top: 250px; }
   #brand .inner {
     width: 1180px;
     margin: 0 auto; }
@@ -3209,7 +3213,8 @@ textarea {
           letter-spacing: 2px;
           margin-bottom: 10px; }
         #brand .inner .wrap .contents1 h1 {
-          font: bold 30px/1 "Montserrat";
+          font: bold 30px/1 "Roboto";
+          letter-spacing: 2px;
           margin-bottom: 40px; }
         #brand .inner .wrap .contents1 p {
           font: 14px/1.6 "Quicksand";
@@ -3249,7 +3254,7 @@ textarea {
         width: 65%;
         float: left;
         height: 300px;
-        background: url(../img/community3.jpg) no-repeat center/cover; }
+        background: url(../img/community1.jpg) no-repeat center/cover; }
       #banner .inner .wrap .contents4 {
         width: 35%;
         float: right;
@@ -3262,7 +3267,8 @@ textarea {
           letter-spacing: 2px;
           margin-bottom: 10px; }
         #banner .inner .wrap .contents4 h1 {
-          font: bold 30px/1 "Montserrat";
+          font: bold 30px/1 "Roboto";
+          letter-spacing: 1px;
           margin-bottom: 40px; }
         #banner .inner .wrap .contents4 p {
           font: 14px/2 "Quicksand";
@@ -3318,7 +3324,7 @@ textarea {
       width: 50%;
       float: left;
       height: 480px;
-      background: url(../img/community5.jpg) no-repeat center/cover; }
+      background: url(../img/2.jpg) no-repeat center/cover; }
     #banner2 .inner .wrap .contents7 {
       width: 50%;
       float: left;
@@ -3333,7 +3339,8 @@ textarea {
         letter-spacing: 2px;
         margin-bottom: 10px; }
       #banner2 .inner .wrap .contents7 h1 {
-        font: bold 30px/1 "Montserrat";
+        font: bold 30px/1 "Roboto";
+        letter-spacing: 1px;
         margin-bottom: 30px; }
       #banner2 .inner .wrap .contents7 h2 {
         font: 15px/1.6 "Quicksand";
@@ -3350,7 +3357,142 @@ textarea {
 
 #news {
   width: 100%;
-  min-height: 500px; }
+  padding: 180px 0 300px; }
+  #news .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #news .inner span {
+      display: block;
+      font: 14px/1 "Quicksand";
+      color: #aaa;
+      text-align: center;
+      letter-spacing: 2px;
+      margin-bottom: 10px; }
+    #news .inner h1 {
+      font: bold 30px/1 "Roboto";
+      text-align: center;
+      margin-bottom: 50px; }
+    #news .inner .wrap {
+      width: 100%; }
+      #news .inner .wrap::after {
+        content: "";
+        display: block;
+        clear: both; }
+      #news .inner .wrap .newsbox {
+        width: 100%;
+        height: 350px; }
+        #news .inner .wrap .newsbox article {
+          width: 580px;
+          float: left;
+          margin-right: 20px;
+          margin-bottom: 20px;
+          cursor: pointer; }
+          #news .inner .wrap .newsbox article:nth-of-type(even) {
+            margin-right: 0; }
+          #news .inner .wrap .newsbox article:nth-of-type(1) .pic::before {
+            background-image: url(../img/gallery4.jpg); }
+          #news .inner .wrap .newsbox article:nth-of-type(2) .pic::before {
+            background-image: url(../img/gallery8.jpg); }
+          #news .inner .wrap .newsbox article:nth-of-type(3) .pic::before {
+            background-image: url(../img/gallery9.jpg); }
+          #news .inner .wrap .newsbox article:nth-of-type(4) .pic::before {
+            background-image: url(../img/1.jpg); }
+          #news .inner .wrap .newsbox article .pic {
+            float: left;
+            width: 220px;
+            height: 145px;
+            overflow: hidden;
+            position: relative; }
+            #news .inner .wrap .newsbox article .pic::before {
+              content: "";
+              display: block;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              transition: 0.5s; }
+            #news .inner .wrap .newsbox article .pic:hover::before {
+              transform: scale(1.1); }
+          #news .inner .wrap .newsbox article .txt {
+            float: left;
+            padding: 50px 30px 0; }
+            #news .inner .wrap .newsbox article .txt h2 {
+              font: 16px/1 "Quicksand";
+              color: #555;
+              margin-bottom: 10px; }
+            #news .inner .wrap .newsbox article .txt h3 {
+              display: inline-block;
+              font: 14px/1 "Quicksand";
+              color: #333;
+              letter-spacing: 1px;
+              position: relative; }
+              #news .inner .wrap .newsbox article .txt h3::after {
+                content: "";
+                display: block;
+                width: 1px;
+                height: 15px;
+                background: #888;
+                position: absolute;
+                top: -1px;
+                right: -11px; }
+            #news .inner .wrap .newsbox article .txt p {
+              display: inline-block;
+              padding-left: 15px;
+              font: 15px/1 "Quicksand";
+              color: #777; }
+      #news .inner .wrap dl {
+        width: 100%; }
+        #news .inner .wrap dl h1 {
+          font: bold 30px "Roboto";
+          text-align: center;
+          margin-bottom: 30px;
+          padding-top: 50px; }
+        #news .inner .wrap dl dt {
+          width: 100%;
+          padding: 25px;
+          box-sizing: border-box;
+          background: #fff;
+          border-bottom: 3px solid #e2f1f8;
+          font: 15px/1 "맑은 고딕";
+          color: #444;
+          letter-spacing: 1px;
+          cursor: pointer;
+          transition: 0.5s;
+          position: relative; }
+          #news .inner .wrap dl dt::after {
+            content: "";
+            display: block;
+            width: 13px;
+            height: 2px;
+            background: #888;
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            transform: translateY(-50%); }
+          #news .inner .wrap dl dt::before {
+            content: "";
+            display: block;
+            width: 2px;
+            height: 13px;
+            background: #888;
+            position: absolute;
+            top: 40%;
+            right: 36px;
+            transition: 5s; }
+          #news .inner .wrap dl dt.on::before {
+            display: none; }
+        #news .inner .wrap dl dd {
+          width: 100%;
+          padding: 20px;
+          box-sizing: border-box;
+          font: 16px/1.6 "맑은 고딕";
+          color: #888;
+          letter-spacing: 1px;
+          display: none; }
 
 /*footer layout*/
 #footer {
