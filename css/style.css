@@ -3501,8 +3501,10 @@ textarea {
           #news .inner .wrap dl dt:hover {
             background: #e2f1f8;
             opacity: 0.8; }
-          #news .inner .wrap dl dt.on::before {
-            display: none; }
+          #news .inner .wrap dl dt.on {
+            background: #e2f1f8; }
+            #news .inner .wrap dl dt.on::before {
+              display: none; }
         #news .inner .wrap dl dd {
           width: 100%;
           padding: 20px;

@@ -1,7 +1,7 @@
 var $frame = $("#news .wrap");
 var $btns = $frame.find("dt");
-var $boxs = $frame.find("dd");
-var speed = 500;
+var $Boxs = $frame.find("dd");
+var speed = 100;
 var enableClick = true;
 
 $btns.on("click", function (e) {
@@ -18,8 +18,7 @@ function activation(self) {
 
     if (isOn) {
         $(self).removeClass("on");
-
-        $(self).next("dd").slideUp(speed, function () {
+        $(self).next("dd").slideUp(speed / 2, function () {
             enableClick = true;
         });
     } else {
