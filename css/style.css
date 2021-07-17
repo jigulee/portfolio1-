@@ -3014,40 +3014,48 @@ textarea {
   box-sizing: border-box; }
   #visual .bg {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 15vh;
+    left: 10vh;
+    width: 75%;
+    height: 75%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: none; }
-    #visual .bg > h1 {
-      position: absolute;
-      bottom: 50%;
-      transform: translateY(-50%);
-      left: 30px;
-      font: bold 16px/1 "Montserrat";
-      color: #222; }
-      #visual .bg > h1::before {
-        content: "";
-        display: block;
-        width: 25px;
-        height: 2px;
-        background: #fff;
-        position: absolute;
-        bottom: -10px;
-        left: -3px; }
     #visual .bg .txt {
       position: absolute;
-      bottom: 15px;
-      right: 20px; }
+      bottom: 30px;
+      right: -150px;
+      background: linear-gradient(45deg, aliceblue, transparent);
+      padding: 25px 30px; }
+      #visual .bg .txt > h1 {
+        font: 18px/1 "Montserrat";
+        color: skyblue;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        position: relative; }
+        #visual .bg .txt > h1::before {
+          content: "";
+          display: block;
+          width: 34px;
+          height: 2px;
+          background: #ddd;
+          position: absolute;
+          bottom: -8px;
+          left: 0px; }
       #visual .bg .txt h2 {
-        font: 50px "Montserrat";
-        color: #777; }
+        font: 35px "Montserrat";
+        color: #777;
+        margin-bottom: 15px; }
+      #visual .bg .txt h3 {
+        font: 18px "Roboto";
+        color: skyblue;
+        letter-spacing: 2px;
+        margin-bottom: 3px; }
       #visual .bg .txt p {
-        font: 14px/1.4 "Montserrat";
-        color: #555; }
+        font: 14px/1.4 "Roboto";
+        color: #aaa;
+        letter-spacing: 1px; }
   #visual .mask {
     width: 100%;
     height: 2500px;
@@ -3059,13 +3067,13 @@ textarea {
     #visual .mask.on {
       top: -2500px; }
   #visual .list {
-    width: 87%;
+    width: 95%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     transition: 1s; }
     #visual .list li {
-      width: 18%;
+      width: 16%;
       height: 100%;
       position: relative;
       transition: 1.5s; }
@@ -3078,7 +3086,7 @@ textarea {
         #visual .list li .pic h1 {
           font: bold 20px/1 "Montserrat";
           position: absolute;
-          top: -10px;
+          top: -15px;
           right: 0;
           transform: rotate(90deg);
           transition: 0.5s;
@@ -3087,7 +3095,7 @@ textarea {
           font: normal 18px/1 "Montserrat";
           letter-spacing: 1px;
           position: relative;
-          top: 37%;
+          top: 35%;
           right: -15px;
           transform: rotate(90deg);
           transition: 0.5s;
@@ -3108,23 +3116,8 @@ textarea {
       #visual .list li:nth-of-type(4) .pic {
         bottom: -25%;
         transition-delay: 0.4s; }
-      #visual .list li:hover {
-        /*
-        &:nth-of-type(1) {
-        	background: #eceff1;
-        }
-        &:nth-of-type(2) {
-        	background: #e2f1f8;
-        }
-        &:nth-of-type(3) {
-        	background: #eceff1;
-        }
-        &:nth-of-type(4) {
-        	background: #e2f1f8;
-        }
-        */ }
-        #visual .list li:hover .pic {
-          transform: scale(1.1); }
+      #visual .list li:hover .pic {
+        transform: scale(1.1); }
     #visual .list.on li {
       transform: translateY(-200%);
       border-right: 0;
@@ -3132,64 +3125,24 @@ textarea {
       #visual .list.on li .pic {
         bottom: 100%; }
   #visual .menu {
-    width: 0px;
-    height: 0px;
-    border-top: 115px solid none;
-    border-bottom: 115px solid #eee;
-    border-left: 115px solid transparent;
     position: absolute;
-    bottom: 0;
+    bottom: 5%;
     right: 0;
     font-size: 20px;
     color: lightslategray;
-    transition: 0.8s;
-    animation: menu2 0.5s ease 1;
+    transition: 1s;
     z-index: 4; }
     #visual .menu span {
-      position: absolute;
-      top: 0;
-      left: 0;
       transition: 0.5s; }
       #visual .menu span.default {
-        opacity: 1;
-        top: 57px;
-        left: -66px;
-        transform: rotate(-45deg); }
+        opacity: 1; }
       #visual .menu span.back {
         opacity: 0; }
-    #visual .menu.on {
-      bottom: calc(100% - 115px);
-      transform: rotate(-90deg);
-      border-top-left-radius: 8px; }
-      #visual .menu.on span.back {
-        opacity: 1;
-        top: 65px;
-        left: -64px;
-        transform: rotate(-224deg); }
-      #visual .menu.on span.default {
-        opacity: 0;
-        bottom: 20%; }
+    #visual .menu.on span.back {
+      opacity: 1; }
+    #visual .menu.on span.default {
+      opacity: 0; }
 
-/*
-@keyframes menu {
-	0% {
-		height: 10vw;
-	}
-	50% {
-		height: 30vw;
-	}
-	100% {
-		height: 5vw;
-	}
-}
-*/
-@keyframes menu2 {
-  0% {
-    bottom: calc(100% - 110px); }
-  50% {
-    bottom: 50%; }
-  100% {
-    bottom: 0; } }
 #brand {
   width: 100%;
   padding: 100px 0;
@@ -3224,17 +3177,27 @@ textarea {
           margin-bottom: 20px; }
         #brand .inner .wrap .contents1 article {
           width: calc(100% / 3);
+          height: 60px;
           float: left;
-          margin-top: 30px; }
+          margin-top: 40px;
+          cursor: pointer; }
           #brand .inner .wrap .contents1 article h2 {
-            font: bold 20px/1 "Roboto";
-            color: skyblue;
-            letter-spacing: 1px;
             margin-bottom: 5px; }
+            #brand .inner .wrap .contents1 article h2 a {
+              font: bold 20px/1 "Roboto";
+              color: skyblue;
+              letter-spacing: 1px;
+              transition: 0.5s; }
           #brand .inner .wrap .contents1 article > span {
             font: 14px/1 "arial";
             color: #999;
-            letter-spacing: 1px; }
+            letter-spacing: 1px;
+            transition: 0.5s; }
+          #brand .inner .wrap .contents1 article:hover a {
+            font-size: 23px;
+            color: #999; }
+          #brand .inner .wrap .contents1 article:hover span {
+            color: skyblue; }
       #brand .inner .wrap .contents2 {
         width: 45%;
         float: right;
