@@ -382,18 +382,32 @@ $mobile: 539px;
 	}
 
 	.menu {
+		display: block;
+		width: 5vw;
+		height: 3vw;
 		position: absolute;
-		bottom: 5%;
-		right: 0;
+		bottom: 20px;
+		right: 20px;
+		//border: 2px solid #eee;
 		font-size: 20px;
-		color: lightslategray;
-		transition: 1s;
-		//animation: menu2 0.5s ease 1;
+		color: lightsteelblue;
+		transition: 0.5s;
 		z-index: 4;
-
 		span {
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			transition: 0.5s;
-
+			.fa-long-arrow-alt-up,
+			.fa-long-arrow-alt-down {
+				padding-left: 10px;
+			}
 			&.default {
 				opacity: 1;
 			}
@@ -403,6 +417,7 @@ $mobile: 539px;
 		}
 
 		&.on {
+			top: 10px;
 			span {
 				&.back {
 					opacity: 1;

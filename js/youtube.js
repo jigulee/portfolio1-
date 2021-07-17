@@ -116,7 +116,8 @@
                     .append(
                         $("<img src='img/loading.gif'>")
                             .css({
-                                width: 80, position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)"
+                                width: 100, position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)",
+                                opacity: 0.5
                             })
                     )
                     .append(
@@ -132,7 +133,7 @@
                                     .attr({
                                         src: "https://www.youtube.com/embed/" + vidID,
                                         width: "100%",
-                                        height: "80%",
+                                        height: "90%",
                                         frameborder: 0,
                                         allowfullscreen: true,
                                     })
@@ -143,7 +144,7 @@
                             .text("close")
                             .css({
                                 position: "absolute",
-                                bottom: 150, right: 105,
+                                bottom: 110, right: 105,
                                 color: "#8aacc8",
                                 fontSize: 18
                             })

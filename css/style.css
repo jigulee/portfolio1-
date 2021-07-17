@@ -1886,6 +1886,7 @@ textarea {
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
+          filter: saturate(75%);
           float: left;
           transition: 0.5s; }
       .youtube .inner #vidGallery article .con {
@@ -3125,23 +3126,40 @@ textarea {
       #visual .list.on li .pic {
         bottom: 100%; }
   #visual .menu {
+    display: block;
+    width: 5vw;
+    height: 3vw;
     position: absolute;
-    bottom: 5%;
-    right: 0;
+    bottom: 20px;
+    right: 20px;
     font-size: 20px;
-    color: lightslategray;
-    transition: 1s;
+    color: lightsteelblue;
+    transition: 0.5s;
     z-index: 4; }
     #visual .menu span {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       transition: 0.5s; }
+      #visual .menu span .fa-long-arrow-alt-up,
+      #visual .menu span .fa-long-arrow-alt-down {
+        padding-left: 10px; }
       #visual .menu span.default {
         opacity: 1; }
       #visual .menu span.back {
         opacity: 0; }
-    #visual .menu.on span.back {
-      opacity: 1; }
-    #visual .menu.on span.default {
-      opacity: 0; }
+    #visual .menu.on {
+      top: 10px; }
+      #visual .menu.on span.back {
+        opacity: 1; }
+      #visual .menu.on span.default {
+        opacity: 0; }
 
 #brand {
   width: 100%;
