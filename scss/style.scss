@@ -231,12 +231,12 @@ $mobile: 539px;
 
 		.txt {
 			position: absolute;
-			bottom: 30px;
+			bottom: 80px;
 			right: -150px;
 			background: linear-gradient(45deg, aliceblue, transparent);
-			padding: 25px 30px;
+			padding: 50px 30px;
 			> h1 {
-				font: 18px/1 "Montserrat";
+				font: bold 18px/1 "Montserrat";
 				color: skyblue;
 				margin-bottom: 10px;
 				padding-left: 5px;
@@ -246,16 +246,17 @@ $mobile: 539px;
 					content: "";
 					display: block;
 					width: 34px;
-					height: 2px;
-					background: #ddd;
+					height: 3px;
+					background: #fff;
 					position: absolute;
 					bottom: -8px;
 					left: 0px;
 				}
 			}
 			h2 {
-				font: 35px "Montserrat";
+				font: 40px "Roboto";
 				color: #777;
+				letter-spacing: 1px;
 				margin-bottom: 15px;
 			}
 			h3 {
@@ -266,8 +267,8 @@ $mobile: 539px;
 			}
 
 			p {
-				font: 14px/1.4 "Roboto";
-				color: #aaa;
+				font: 14px/1.6 "Roboto";
+				color: #999;
 				letter-spacing: 1px;
 			}
 		}
@@ -618,6 +619,34 @@ $mobile: 539px;
 				float: left;
 				height: 480px;
 				background: url(../img/3.jpg) no-repeat center/cover;
+				position: relative;
+				cursor: pointer;
+
+				&::before,
+				&::after {
+					content: "";
+					display: block;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					background: url(../img/4.jpg) no-repeat center/cover;
+					transition: 0.7s;
+				}
+				&::before {
+					clip-path: inset(0% 100% 50% 0%);
+				}
+				&::after {
+					clip-path: inset(50% 100% 0% 0%);
+					transition-delay: 0.2s;
+				}
+				&:hover::before {
+					clip-path: inset(0% 0% 50% 0%);
+				}
+				&:hover::after {
+					clip-path: inset(50% 0% 0% 0%);
+				}
 			}
 			.contents7 {
 				width: 50%;
@@ -642,6 +671,7 @@ $mobile: 539px;
 					font: 15px/1.6 "Quicksand";
 					color: #555;
 					margin-bottom: 10px;
+					cursor: pointer;
 				}
 				p {
 					margin-bottom: 30px;
@@ -652,6 +682,12 @@ $mobile: 539px;
 					.fa-arrow-right {
 						font-size: 12px;
 						padding-left: 5px;
+						transition: 0.5s;
+					}
+					&:hover {
+						.fa-arrow-right {
+							padding-left: 10px;
+						}
 					}
 				}
 			}

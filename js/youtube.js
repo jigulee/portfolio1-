@@ -117,7 +117,7 @@
                         $("<img src='img/loading.gif'>")
                             .css({
                                 width: 100, position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)",
-                                opacity: 0.5
+                                opacity: 0.6
                             })
                     )
                     .append(
@@ -144,9 +144,9 @@
                             .text("close")
                             .css({
                                 position: "absolute",
-                                bottom: 110, right: 105,
+                                bottom: "15%", right: 105,
                                 color: "#8aacc8",
-                                fontSize: 18
+                                fontSize: 19,
                             })
                     ).fadeIn()
             )// .pop append ends
