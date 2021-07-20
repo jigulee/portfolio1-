@@ -686,7 +686,7 @@ $mobile: 539px;
 					}
 					&:hover {
 						.fa-arrow-right {
-							padding-left: 10px;
+							transform: translateX(10px);
 						}
 					}
 				}
@@ -821,7 +821,7 @@ $mobile: 539px;
 
 			dl {
 				width: 100%;
-				h1 {
+				> h1 {
 					font: bold 30px "Roboto";
 					text-align: center;
 					margin-bottom: 30px;
@@ -833,9 +833,9 @@ $mobile: 539px;
 					box-sizing: border-box;
 					background: #fff;
 					border-bottom: 3px solid #e2f1f8;
-					font: 15px/1 "맑은 고딕";
+					font: bold 14px/1 "Roboto";
 					color: #888;
-					letter-spacing: 1px;
+					letter-spacing: 2px;
 					cursor: pointer;
 					transition: 0.5s;
 					position: relative;
@@ -876,11 +876,41 @@ $mobile: 539px;
 					width: 100%;
 					padding: 20px;
 					box-sizing: border-box;
-					font: 16px/1.6 "맑은 고딕";
+					font: 16px/1.6 "Roboto";
 					color: #888;
 					letter-spacing: 1px;
 					//background: #e2f1f8;
 					display: none;
+				}
+			}
+
+			.more {
+				width: 120px;
+				height: 40px;
+				border: 2px solid #e2f1f8;
+				box-sizing: border-box;
+				margin: 0 auto;
+				margin-top: 50px;
+				a {
+					display: block;
+					width: 100%;
+					height: 100%;
+					font: bold 15px/40px "Roboto";
+					color: #333;
+					letter-spacing: 2px;
+					text-align: center;
+
+					.fa-long-arrow-alt-right {
+						padding-left: 7px;
+						margin-bottom: -1px;
+						color: #444;
+						transition: 0.5s;
+					}
+				}
+				&:hover {
+					.fa-long-arrow-alt-right {
+						transform: translateX(10px);
+					}
 				}
 			}
 		}
@@ -1046,7 +1076,6 @@ $mobile: 539px;
 		.inner {
 			width: 100%;
 			> h1 {
-				padding-bottom: 20px;
 				a {
 					font-size: 35px;
 				}
@@ -1057,6 +1086,284 @@ $mobile: 539px;
 				}
 				.btnCall {
 					display: block;
+				}
+			}
+		}
+	}
+
+	#visual {
+		width: 100%;
+		height: 75vh;
+		padding: 0px 30px 0;
+		box-sizing: border-box;
+		.bg {
+			top: 15vh;
+			left: 0vh;
+			width: 100%;
+			height: 100%;
+			.txt {
+				bottom: 130px;
+				right: 0px;
+				box-sizing: border-box;
+				padding: 20px;
+				> h1 {
+					font: bold 16px/1 "Montserrat";
+					padding-left: 4px;
+					&::before {
+						width: 30px;
+						height: 2px;
+					}
+				}
+				h2 {
+					font: 30px "Roboto";
+					margin-bottom: 10px;
+				}
+				h3 {
+					font: 15px "Roboto";
+				}
+				p {
+					font: 12px/1.4 "Roboto";
+				}
+			}
+		}
+
+		.mask {
+			width: 100%;
+			height: 2500px;
+			background: lightblue;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			transition: top 1.5s ease;
+
+			&.on {
+				top: -2500px;
+			}
+		}
+
+		.list {
+			width: 95%;
+			height: 100%;
+			justify-content: space-between;
+			li {
+				width: 22%;
+				.pic {
+					height: 68vh;
+					transition: 2s;
+
+					h1 {
+						top: -25px;
+						font-size: 17px;
+					}
+
+					h2 {
+						display: none;
+					}
+				}
+			}
+		}
+
+		.menu {
+			width: 80px;
+			height: 30px;
+			bottom: 0;
+			right: -10px;
+			font-size: 17px;
+			z-index: 2;
+			span {
+				.fa-long-arrow-alt-up,
+				.fa-long-arrow-alt-down {
+					padding-left: 5px;
+				}
+			}
+			&.on {
+				top: 11vh;
+			}
+		}
+	}
+
+	#brand {
+		padding: 50px 30px 50px;
+		box-sizing: border-box;
+		margin-top: 100px;
+		margin-bottom: 100px;
+		.inner {
+			width: 100%;
+			.wrap {
+				.contents1 {
+					width: 57%;
+					h1 {
+						margin-bottom: 30px;
+					}
+					p {
+						font: 14px/1.6 "Quicksand";
+					}
+					article {
+						margin-top: 10px;
+						h2 {
+							margin-bottom: 5px;
+							a {
+								font: bold 18px/1 "Roboto";
+							}
+						}
+						> span {
+							font: 13px/1 "arial";
+						}
+						&:hover {
+							a {
+								font-size: 20px;
+							}
+						}
+					}
+				}
+				.contents2 {
+					width: 40%;
+				}
+			}
+		}
+	}
+
+	#banner {
+		padding: 100px 30px 100px;
+		box-sizing: border-box;
+		.inner {
+			width: 100%;
+			.wrap {
+				.contents3 {
+					width: 60%;
+					height: 330px;
+				}
+				.contents4 {
+					width: 40%;
+					padding-left: 20px;
+					h1 {
+						font: bold 23px/1 "Roboto";
+						margin-bottom: 20px;
+					}
+					p {
+						font: 14px/1.6 "Quicksand";
+						margin-bottom: 0;
+					}
+				}
+				.contents5 {
+					margin-top: 20px;
+					.con1 {
+						width: 30%;
+						padding-right: 20px;
+						> p {
+							font: 14px/1.5 "Quicksand";
+							margin-bottom: 15px;
+						}
+					}
+					.con2 {
+						width: 30%;
+						height: 440px;
+					}
+					.con3 {
+						//display: none;
+						width: 40%;
+						padding-left: 20px;
+						.pic {
+							height: 280px;
+						}
+						.txt {
+							margin-top: 10px;
+							p {
+								font: 14px/1.6 "Quicksand";
+								margin-bottom: 0px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#banner2 {
+		.inner {
+			.wrap {
+				.contents6 {
+					width: 55%;
+					height: 440px;
+				}
+				.contents7 {
+					width: 45%;
+					height: 440px;
+					padding: 25px 20px 20px;
+					h1 {
+						margin-bottom: 20px;
+						font-size: 25px;
+					}
+					h2 {
+						font: 14px/1.4 "Quicksand";
+						margin-bottom: 0px;
+					}
+					p {
+						font-size: 15px;
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+
+	#news {
+		padding: 0px 30px 200px;
+		box-sizing: border-box;
+		.inner {
+			width: 100%;
+			.wrap {
+				.newsbox {
+					width: 100%;
+					height: auto;
+					article {
+						width: 49%;
+						margin-right: 2%;
+						margin-bottom: 10px;
+						.pic {
+							width: 100%;
+							height: 25vh;
+						}
+						.txt {
+							padding: 20px 0;
+							h2 {
+								font: 14px/1 "Quicksand";
+								margin-bottom: 0px;
+							}
+							h3 {
+								font: 13px/1 "Quicksand";
+							}
+						}
+						&:nth-of-type(3),
+						&:nth-of-type(4) {
+							margin-bottom: 40px;
+						}
+					}
+				}
+
+				dl {
+					> h1 {
+						margin-bottom: 20px;
+					}
+					dt {
+						padding: 20px 10px;
+						border-bottom: 2px solid #e2f1f8;
+						font: bold 13px/1.6 "Roboto";
+						&::after {
+							right: 20px;
+						}
+						&::before {
+							right: 26px;
+						}
+					}
+					dd {
+						padding: 10px;
+						font: 13px/1.6 "Roboto";
+					}
+				}
+
+				.more {
+					margin-top: 30px;
 				}
 			}
 		}
@@ -1114,6 +1421,18 @@ $mobile: 539px;
 						}
 					}
 				}
+			}
+		}
+	}
+
+	/*scroll btn*/
+	#navi {
+		right: 15px;
+		li {
+			margin: 15px 0;
+			a {
+				width: 7px;
+				height: 7px;
 			}
 		}
 	}

@@ -3363,7 +3363,7 @@ textarea {
           padding-left: 5px;
           transition: 0.5s; }
         #banner2 .inner .wrap .contents7 p:hover .fa-arrow-right {
-          padding-left: 10px; }
+          transform: translateX(10px); }
 
 #news {
   width: 100%;
@@ -3468,7 +3468,7 @@ textarea {
               color: #777; }
       #news .inner .wrap dl {
         width: 100%; }
-        #news .inner .wrap dl h1 {
+        #news .inner .wrap dl > h1 {
           font: bold 30px "Roboto";
           text-align: center;
           margin-bottom: 30px;
@@ -3479,9 +3479,9 @@ textarea {
           box-sizing: border-box;
           background: #fff;
           border-bottom: 3px solid #e2f1f8;
-          font: 15px/1 "맑은 고딕";
+          font: bold 14px/1 "Roboto";
           color: #888;
-          letter-spacing: 1px;
+          letter-spacing: 2px;
           cursor: pointer;
           transition: 0.5s;
           position: relative; }
@@ -3516,10 +3516,32 @@ textarea {
           width: 100%;
           padding: 20px;
           box-sizing: border-box;
-          font: 16px/1.6 "맑은 고딕";
+          font: 16px/1.6 "Roboto";
           color: #888;
           letter-spacing: 1px;
           display: none; }
+      #news .inner .wrap .more {
+        width: 120px;
+        height: 40px;
+        border: 2px solid #e2f1f8;
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-top: 50px; }
+        #news .inner .wrap .more a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          font: bold 15px/40px "Roboto";
+          color: #333;
+          letter-spacing: 2px;
+          text-align: center; }
+          #news .inner .wrap .more a .fa-long-arrow-alt-right {
+            padding-left: 7px;
+            margin-bottom: -1px;
+            color: #444;
+            transition: 0.5s; }
+        #news .inner .wrap .more:hover .fa-long-arrow-alt-right {
+          transform: translateX(10px); }
   #news.on .inner .wrap article {
     opacity: 1;
     transform: translateY(0); }
@@ -3643,14 +3665,199 @@ textarea {
     padding-top: 20px; }
     #header .inner {
       width: 100%; }
-      #header .inner > h1 {
-        padding-bottom: 20px; }
-        #header .inner > h1 a {
-          font-size: 35px; }
+      #header .inner > h1 a {
+        font-size: 35px; }
       #header .inner .wrap .menuWeb {
         display: none; }
       #header .inner .wrap .btnCall {
         display: block; }
+
+  #visual {
+    width: 100%;
+    height: 75vh;
+    padding: 0px 30px 0;
+    box-sizing: border-box; }
+    #visual .bg {
+      top: 15vh;
+      left: 0vh;
+      width: 100%;
+      height: 100%; }
+      #visual .bg .txt {
+        bottom: 130px;
+        right: 0px;
+        box-sizing: border-box;
+        padding: 20px; }
+        #visual .bg .txt > h1 {
+          font: bold 16px/1 "Montserrat";
+          padding-left: 4px; }
+          #visual .bg .txt > h1::before {
+            width: 30px;
+            height: 2px; }
+        #visual .bg .txt h2 {
+          font: 30px "Roboto";
+          margin-bottom: 10px; }
+        #visual .bg .txt h3 {
+          font: 15px "Roboto"; }
+        #visual .bg .txt p {
+          font: 12px/1.4 "Roboto"; }
+    #visual .mask {
+      width: 100%;
+      height: 2500px;
+      background: lightblue;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      transition: top 1.5s ease; }
+      #visual .mask.on {
+        top: -2500px; }
+    #visual .list {
+      width: 95%;
+      height: 100%;
+      justify-content: space-between; }
+      #visual .list li {
+        width: 22%; }
+        #visual .list li .pic {
+          height: 68vh;
+          transition: 2s; }
+          #visual .list li .pic h1 {
+            top: -25px;
+            font-size: 17px; }
+          #visual .list li .pic h2 {
+            display: none; }
+    #visual .menu {
+      width: 80px;
+      height: 30px;
+      bottom: 0;
+      right: -10px;
+      font-size: 17px;
+      z-index: 2; }
+      #visual .menu span .fa-long-arrow-alt-up,
+      #visual .menu span .fa-long-arrow-alt-down {
+        padding-left: 5px; }
+      #visual .menu.on {
+        top: 11vh; }
+
+  #brand {
+    padding: 50px 30px 50px;
+    box-sizing: border-box;
+    margin-top: 100px;
+    margin-bottom: 100px; }
+    #brand .inner {
+      width: 100%; }
+      #brand .inner .wrap .contents1 {
+        width: 57%; }
+        #brand .inner .wrap .contents1 h1 {
+          margin-bottom: 30px; }
+        #brand .inner .wrap .contents1 p {
+          font: 14px/1.6 "Quicksand"; }
+        #brand .inner .wrap .contents1 article {
+          margin-top: 10px; }
+          #brand .inner .wrap .contents1 article h2 {
+            margin-bottom: 5px; }
+            #brand .inner .wrap .contents1 article h2 a {
+              font: bold 18px/1 "Roboto"; }
+          #brand .inner .wrap .contents1 article > span {
+            font: 13px/1 "arial"; }
+          #brand .inner .wrap .contents1 article:hover a {
+            font-size: 20px; }
+      #brand .inner .wrap .contents2 {
+        width: 40%; }
+
+  #banner {
+    padding: 100px 30px 100px;
+    box-sizing: border-box; }
+    #banner .inner {
+      width: 100%; }
+      #banner .inner .wrap .contents3 {
+        width: 60%;
+        height: 330px; }
+      #banner .inner .wrap .contents4 {
+        width: 40%;
+        padding-left: 20px; }
+        #banner .inner .wrap .contents4 h1 {
+          font: bold 23px/1 "Roboto";
+          margin-bottom: 20px; }
+        #banner .inner .wrap .contents4 p {
+          font: 14px/1.6 "Quicksand";
+          margin-bottom: 0; }
+      #banner .inner .wrap .contents5 {
+        margin-top: 20px; }
+        #banner .inner .wrap .contents5 .con1 {
+          width: 30%;
+          padding-right: 20px; }
+          #banner .inner .wrap .contents5 .con1 > p {
+            font: 14px/1.5 "Quicksand";
+            margin-bottom: 15px; }
+        #banner .inner .wrap .contents5 .con2 {
+          width: 30%;
+          height: 440px; }
+        #banner .inner .wrap .contents5 .con3 {
+          width: 40%;
+          padding-left: 20px; }
+          #banner .inner .wrap .contents5 .con3 .pic {
+            height: 280px; }
+          #banner .inner .wrap .contents5 .con3 .txt {
+            margin-top: 10px; }
+            #banner .inner .wrap .contents5 .con3 .txt p {
+              font: 14px/1.6 "Quicksand";
+              margin-bottom: 0px; }
+
+  #banner2 .inner .wrap .contents6 {
+    width: 55%;
+    height: 440px; }
+  #banner2 .inner .wrap .contents7 {
+    width: 45%;
+    height: 440px;
+    padding: 25px 20px 20px; }
+    #banner2 .inner .wrap .contents7 h1 {
+      margin-bottom: 20px;
+      font-size: 25px; }
+    #banner2 .inner .wrap .contents7 h2 {
+      font: 14px/1.4 "Quicksand";
+      margin-bottom: 0px; }
+    #banner2 .inner .wrap .contents7 p {
+      font-size: 15px;
+      margin-bottom: 10px; }
+
+  #news {
+    padding: 0px 30px 200px;
+    box-sizing: border-box; }
+    #news .inner {
+      width: 100%; }
+      #news .inner .wrap .newsbox {
+        width: 100%;
+        height: auto; }
+        #news .inner .wrap .newsbox article {
+          width: 49%;
+          margin-right: 2%;
+          margin-bottom: 10px; }
+          #news .inner .wrap .newsbox article .pic {
+            width: 100%;
+            height: 25vh; }
+          #news .inner .wrap .newsbox article .txt {
+            padding: 20px 0; }
+            #news .inner .wrap .newsbox article .txt h2 {
+              font: 14px/1 "Quicksand";
+              margin-bottom: 0px; }
+            #news .inner .wrap .newsbox article .txt h3 {
+              font: 13px/1 "Quicksand"; }
+          #news .inner .wrap .newsbox article:nth-of-type(3), #news .inner .wrap .newsbox article:nth-of-type(4) {
+            margin-bottom: 40px; }
+      #news .inner .wrap dl > h1 {
+        margin-bottom: 20px; }
+      #news .inner .wrap dl dt {
+        padding: 20px 10px;
+        border-bottom: 2px solid #e2f1f8;
+        font: bold 13px/1.6 "Roboto"; }
+        #news .inner .wrap dl dt::after {
+          right: 20px; }
+        #news .inner .wrap dl dt::before {
+          right: 26px; }
+      #news .inner .wrap dl dd {
+        padding: 10px;
+        font: 13px/1.6 "Roboto"; }
+      #news .inner .wrap .more {
+        margin-top: 30px; }
 
   /*footer layout*/
   #footer .upper {
@@ -3689,7 +3896,16 @@ textarea {
         #footer .loewr .inner .sns li {
           margin-left: 15px; }
           #footer .loewr .inner .sns li a {
-            color: #999; } }
+            color: #999; }
+
+  /*scroll btn*/
+  #navi {
+    right: 15px; }
+    #navi li {
+      margin: 15px 0; }
+      #navi li a {
+        width: 7px;
+        height: 7px; } }
 /* Mobile*/
 @media screen and (max-width: 539px) {
   #header {
