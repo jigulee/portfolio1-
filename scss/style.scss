@@ -1444,7 +1444,6 @@ $mobile: 539px;
 		padding-top: 10px;
 		.inner {
 			h1 {
-				padding-bottom: 15px;
 				a {
 					font-size: 30px;
 				}
@@ -1477,6 +1476,268 @@ $mobile: 539px;
 					}
 					&.on::before {
 						top: calc(50% - 2px);
+					}
+				}
+			}
+		}
+	}
+
+	#visual {
+		padding: 0px 0px 0;
+		height: 40vh;
+		.bg {
+			.txt {
+				width: 100%;
+				bottom: 107px;
+				right: 0px;
+				padding: 20px;
+				> h1 {
+					font: bold 12px/1 "Montserrat";
+					padding-left: 3px;
+					margin-bottom: 6px;
+					&::before {
+						width: 24px;
+						height: 1px;
+						bottom: -5px;
+					}
+				}
+				h2 {
+					font: 20px "Roboto";
+					margin-bottom: 5px;
+				}
+				h3 {
+					font: 11px "Roboto";
+					margin-bottom: 0px;
+					letter-spacing: 1px;
+				}
+				p {
+					display: none;
+				}
+			}
+		}
+		.list {
+			width: 100%;
+			li {
+				width: 21%;
+				.pic {
+					height: 33vh;
+					h1 {
+						top: -20px;
+						font-size: 13px;
+						z-index: 1;
+					}
+				}
+			}
+		}
+		.menu {
+			font-size: 14px;
+		}
+	}
+
+	#brand {
+		padding: 35px 30px;
+		box-sizing: border-box;
+		margin-top: 100px;
+		margin-bottom: 30px;
+		.inner {
+			.wrap {
+				.contents1 {
+					width: 100%;
+					h1 {
+						font-size: 25px;
+						margin-bottom: 10px;
+					}
+					p {
+						font: 13px/1.4 "Quicksand";
+						margin-bottom: 7px;
+						word-break: break-all;
+					}
+					article {
+						margin-top: 0px;
+						margin-bottom: 15px;
+						h2 {
+							margin-bottom: 0px;
+							a {
+								font: bold 15px/1 "Roboto";
+							}
+						}
+						> span {
+							font: 10px/1 "arial";
+							margin-bottom: 7px;
+						}
+						&:hover {
+							a {
+								font-size: 16px;
+							}
+						}
+					}
+				}
+				.contents2 {
+					width: 100%;
+					height: 250px;
+				}
+			}
+		}
+	}
+
+	#banner {
+		padding: 60px 30px;
+		box-sizing: border-box;
+		.inner {
+			width: 100%;
+			.wrap {
+				.contents3 {
+					width: 100%;
+					height: 200px;
+				}
+				.contents4 {
+					width: 100%;
+					padding-left: 0px;
+					padding-top: 10px;
+					h1 {
+						font: bold 23px/1 "Roboto";
+						margin-bottom: 10px;
+					}
+					span {
+						margin-bottom: 5px;
+					}
+					p {
+						font: 14px/1.4 "Quicksand";
+						margin-bottom: 0;
+					}
+				}
+				.contents5 {
+					margin-top: 20px;
+					.con1 {
+						width: 100%;
+						padding-right: 20px;
+						> p {
+							display: none;
+						}
+					}
+					.con2 {
+						width: 100%;
+						height: 200px;
+					}
+					.con3 {
+						//display: none;
+						width: 100%;
+						padding-left: 0px;
+						.pic {
+							display: none;
+						}
+						.txt {
+							margin-top: 10px;
+							p {
+								font: 14px/1.4 "Quicksand";
+								margin-bottom: 0px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#banner2 {
+		padding: 50px 0 100px;
+		.inner {
+			.wrap {
+				.contents6 {
+					width: 100%;
+					height: 200px;
+				}
+				.contents7 {
+					width: 100%;
+					height: 355px;
+					padding: 25px;
+					h1 {
+						margin-bottom: 15px;
+						font-size: 25px;
+					}
+					span {
+						margin-bottom: 5px;
+					}
+					h2 {
+						font: 13px/1.3 "Quicksand";
+						margin-bottom: 0px;
+					}
+					p {
+						font-size: 14px;
+						margin-bottom: 15px;
+					}
+				}
+			}
+		}
+	}
+
+	#news {
+		padding: 0px 30px 200px;
+		.inner {
+			h1 {
+				font-size: 25px;
+			}
+			.wrap {
+				.newsbox {
+					article {
+						width: 100%;
+						margin-right: 0%;
+						margin-bottom: 5px;
+						.pic {
+							width: 100%;
+							height: 20vh;
+						}
+						.txt {
+							padding: 10px 0;
+							h2 {
+								font: 13px/1 "Quicksand";
+								margin-bottom: 0px;
+							}
+							h3 {
+								font: 12px/1 "Quicksand";
+							}
+							p {
+								font-size: 12px;
+							}
+						}
+						&:nth-of-type(3),
+						&:nth-of-type(4) {
+							margin-bottom: 40px;
+						}
+					}
+				}
+
+				dl {
+					> h1 {
+						font-size: 25px;
+						margin-bottom: 10px;
+					}
+					dt {
+						padding: 15px 25px 15px 0;
+						border-bottom: 2px solid #e2f1f8;
+						font: bold 12px/1.4 "Roboto";
+						word-break: break-all;
+						&::after {
+							right: 10px;
+							height: 1px;
+						}
+						&::before {
+							right: 16px;
+							width: 1px;
+						}
+					}
+					dd {
+						padding: 10px;
+						font: 13px/1.6 "Roboto";
+					}
+				}
+
+				.more {
+					width: 100px;
+					height: 35px;
+					margin-top: 30px;
+					a {
+						font: bold 14px/35px "Roboto";
 					}
 				}
 			}
