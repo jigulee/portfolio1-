@@ -298,11 +298,11 @@
                             회원가입 양식 테이블
                         </caption>
                         <tr>
-                            <th><label for="username">이름 *</label></th>
+                            <th scope="row"><label for="username">이름 *</label></th>
                             <td><input type="text" id="username" placeholder="이름" name="user"></td>
                         </tr>
                         <tr>
-                            <th>성별 *</th>
+                            <th scope="row">성별 *</th>
 
                             <td><label for="male"><input type="radio" id="male" name="gender" value="male"> 남 </label>
                                 <label for="female"> <input type="radio" id="female" name="gender" value="male"> 여
@@ -313,24 +313,24 @@
 
                         </tr>
                         <tr>
-                            <th><label for="id">아이디 *</label></th>
+                            <th scope="row"><label for="id">아이디 *</label></th>
                             <td><input type="text" id="id" name="id" placeholder="아이디">
                                 <button><a href="#">중복확인</a></button>
                                 <span>* 5글자 이상 입력하세요.</span>
                             </td>
                         </tr>
                         <tr>
-                            <th><label for="pwd1">비밀번호 *</label></th>
+                            <th scope="row"><label for="pwd1">비밀번호 *</label></th>
                             <td><input type="password" id="pwd1" name="pwd1" placeholder="비밀번호">
                                 <span> *영문, 숫자, 특수문자 포함하여 5글자 이상 입력하세요.</span>
                             </td>
                         </tr>
                         <tr>
-                            <th><label for="pwd2">비밀번호 확인 *</label></th>
+                            <th scope="row"><label for="pwd2">비밀번호 확인 *</label></th>
                             <td><input type="password" id="pwd2" name="pwd2" placeholder="비밀번호 재입력"></td>
                         </tr>
                         <tr>
-                            <th><label for="ph">핸드폰번호 *</label></th>
+                            <th scope="row"><label for="ph">핸드폰번호 *</label></th>
                             <td>
                                 <input type="text" id="ph" name="ph" placeholder="010"> -
                                 <input type="text" id="ph" name="ph"> -
@@ -339,7 +339,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th><label for="company">E-mail ID *</label></th>
+                            <th scope="row"><label for="company">E-mail ID *</label></th>
                             <td>
                                 <input type="text" name="email1" placeholder="이메일 ID"> @
                                 <input type="text" name="email1" placeholder="이메일 주소">
@@ -352,15 +352,15 @@
                             </td>
                         </tr>
                         <tr>
-                            <th><label for="date" name="date">생년월일 </label></th>
+                            <th scope="row"><label for="date" name="date">생년월일 </label></th>
                             <td><input type="date" id="date"></td>
                         </tr>
                         <tr>
-                            <th><label for="address">주소</label></th>
+                            <th scope="row"><label for="address">주소</label></th>
                             <td><input type="text" name="address" id="address"><button><a>우편번호 검색</a></button></td>
                         </tr>
                         <tr>
-                            <th><label for="houseType">주거형태</label></th>
+                            <th scope="row"><label for="houseType">주거형태</label></th>
                             <td>
                                 <select name="houseType" id="houseType">
                                     <option value="Korea">주택</option>
@@ -370,7 +370,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>마켓팅 수신동의</th>
+                            <th scope="row">마켓팅 수신동의</th>
                             <td>
                                 <label for="email"> <input type="checkbox" id="email" name="marketing" value="email">
                                     이메일
@@ -382,7 +382,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th><label for="comments">Comments</label></th>
+                            <th scope="row"><label for="comments">Comments</label></th>
                             <td><textarea name="comments" id="comments" cols="30" rows="10"></textarea></td>
                         </tr>
                         <article><input type="submit" value="JOIN"></article>

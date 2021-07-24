@@ -4,7 +4,7 @@ var $boxs = $tab.find("dd");
 var enableClick = true;
 
 
-$btns.on("click", function (e) {
+$btns.on("click focusin", function (e) {
     e.preventDefault();
 
     var isOn = $(this).hasClass("on");
