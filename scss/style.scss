@@ -632,7 +632,7 @@ $mobile: 539px;
 					top: 0;
 					left: 0;
 					background: url(../img/4.jpg) no-repeat center/cover;
-					transition: 0.7s;
+					transition: 0.8s;
 				}
 				&::before {
 					clip-path: inset(0% 100% 50% 0%);
@@ -641,12 +641,14 @@ $mobile: 539px;
 					clip-path: inset(50% 100% 0% 0%);
 					transition-delay: 0.2s;
 				}
+				/*
 				&:hover::before {
 					clip-path: inset(0% 0% 50% 0%);
 				}
 				&:hover::after {
 					clip-path: inset(50% 0% 0% 0%);
 				}
+				*/
 			}
 			.contents7 {
 				width: 50%;
@@ -690,6 +692,14 @@ $mobile: 539px;
 						}
 					}
 				}
+			}
+		}
+		&:hover {
+			.contents6::before {
+				clip-path: inset(0% 0% 50% 0%);
+			}
+			.contents6::after {
+				clip-path: inset(50% 0% 0% 0%);
 			}
 		}
 	}
