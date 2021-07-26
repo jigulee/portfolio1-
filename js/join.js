@@ -13,12 +13,14 @@
         this.init(el);
         this.bindingEvent(opt);
     }
+
     MyValidation.prototype.init = function (el) {
         //el로 전달받은거 자체가 제이쿼리 선택자이기 때문에
         //다시 제이쿼리 선택자로 감쌀 필요가 없음
         //el --> $("#myForm")
         this.submit = el.find("input[type=submit]");
     }
+
     MyValidation.prototype.bindingEvent = function (opt) {
 
         this.submit.on("click", function (e) {
@@ -58,6 +60,7 @@
 
         }.bind(this));
     }
+
     MyValidation.prototype.isTxt = function (name) {
         var len = 5;
         var txt = $("[name=" + name + "]").val();
