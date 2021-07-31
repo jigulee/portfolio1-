@@ -64,7 +64,7 @@
 
 			&.on {
 				opacity: 1;
-				transform: translateY(0px);
+				transform: translateY(20px);
 			}
 
 			ul {
@@ -148,7 +148,8 @@
 							}
 							span {
 								font: bold 14px/1 "Roboto";
-								color: lightsteelblue;
+								letter-spacing: 1px;
+								color: skyblue;
 								margin-left: 15px;
 								opacity: 0.7;
 								position: relative;
