@@ -1042,6 +1042,8 @@ textarea {
   .defartment .inner .wrap {
     padding-top: 50px; }
     .defartment .inner .wrap .div_tree1 .pic1 {
+      width: 80%;
+      margin: 0 auto;
       margin-bottom: 100px; }
       .defartment .inner .wrap .div_tree1 .pic1 h1 {
         font-size: 30px;
@@ -3312,15 +3314,7 @@ textarea {
       height: 480px;
       background: url(../img/3.jpg) no-repeat center/cover;
       position: relative;
-      cursor: pointer;
-      /*
-      &:hover::before {
-      	clip-path: inset(0% 0% 50% 0%);
-      }
-      &:hover::after {
-      	clip-path: inset(50% 0% 0% 0%);
-      }
-      */ }
+      cursor: pointer; }
       #banner2 .inner .wrap .contents6::before, #banner2 .inner .wrap .contents6::after {
         content: "";
         display: block;
@@ -3720,11 +3714,11 @@ textarea {
       #visual .mask.on {
         top: -2500px; }
     #visual .list {
-      width: 95%;
-      height: 100%;
+      width: 85%;
+      height: 110%;
       justify-content: space-between; }
       #visual .list li {
-        width: 22%; }
+        width: 20%; }
         #visual .list li .pic {
           height: 68vh;
           transition: 2s; }
@@ -3737,7 +3731,7 @@ textarea {
       width: 80px;
       height: 30px;
       bottom: 0;
-      right: -10px;
+      right: 70px;
       font-size: 17px;
       z-index: 2; }
       #visual .menu span .fa-long-arrow-alt-up,
@@ -3749,7 +3743,7 @@ textarea {
   #brand {
     padding: 50px 30px 50px;
     box-sizing: border-box;
-    margin-top: 100px;
+    margin-top: 0px;
     margin-bottom: 100px; }
     #brand .inner {
       width: 100%; }
@@ -3813,11 +3807,11 @@ textarea {
 
   #banner2 .inner .wrap .contents6 {
     width: 55%;
-    height: 440px; }
+    height: 370px; }
   #banner2 .inner .wrap .contents7 {
     width: 45%;
-    height: 440px;
-    padding: 25px 20px 20px; }
+    height: 370px;
+    padding: 30px; }
     #banner2 .inner .wrap .contents7 h1 {
       margin-bottom: 20px;
       font-size: 25px; }
@@ -3829,7 +3823,7 @@ textarea {
       margin-bottom: 10px; }
 
   #news {
-    padding: 0px 30px 200px;
+    padding: 80px 30px 200px;
     box-sizing: border-box; }
     #news .inner {
       width: 100%; }
@@ -3837,8 +3831,8 @@ textarea {
         width: 100%;
         height: auto; }
         #news .inner .wrap .newsbox article {
-          width: 49%;
-          margin-right: 2%;
+          width: 48.5%;
+          margin-right: 3%;
           margin-bottom: 10px; }
           #news .inner .wrap .newsbox article .pic {
             width: 100%;
@@ -3913,8 +3907,8 @@ textarea {
     #navi li {
       margin: 15px 0; }
       #navi li a {
-        width: 7px;
-        height: 7px; } }
+        width: 8px;
+        height: 8px; } }
 /* Mobile*/
 @media screen and (max-width: 539px) {
   #header {
@@ -3942,7 +3936,7 @@ textarea {
         top: calc(50% - 2px); }
 
   #visual {
-    padding: 0px 0px 0;
+    padding: 0px 30px 0;
     height: 40vh; }
     #visual .bg .txt {
       width: 100%;
@@ -3973,16 +3967,24 @@ textarea {
         #visual .list li .pic {
           height: 33vh; }
           #visual .list li .pic h1 {
-            top: -20px;
-            font-size: 13px;
-            z-index: 1; }
+            display: none; }
+        #visual .list li:nth-of-type(1) .pic {
+          bottom: -5%; }
+        #visual .list li:nth-of-type(2) .pic {
+          bottom: -5%; }
+        #visual .list li:nth-of-type(3) .pic {
+          bottom: -5%; }
+        #visual .list li:nth-of-type(4) .pic {
+          bottom: -5%; }
     #visual .menu {
-      font-size: 14px; }
+      font-size: 14px;
+      top: 8vh;
+      right: 12px; }
 
   #brand {
     padding: 35px 30px;
     box-sizing: border-box;
-    margin-top: 100px;
+    margin-top: 0px;
     margin-bottom: 30px; }
     #brand .inner .wrap .contents1 {
       width: 100%; }
@@ -3990,45 +3992,44 @@ textarea {
         font-size: 25px;
         margin-bottom: 10px; }
       #brand .inner .wrap .contents1 p {
-        font: 13px/1.4 "Quicksand";
-        margin-bottom: 7px;
-        word-break: break-all; }
+        display: none; }
       #brand .inner .wrap .contents1 article {
         margin-top: 0px;
         margin-bottom: 15px; }
         #brand .inner .wrap .contents1 article h2 {
-          margin-bottom: 0px; }
+          margin-bottom: 0px;
+          text-align: left; }
           #brand .inner .wrap .contents1 article h2 a {
             font: bold 15px/1 "Roboto"; }
         #brand .inner .wrap .contents1 article > span {
-          font: 10px/1 "arial";
-          margin-bottom: 7px; }
+          display: block;
+          font: 11px/1 "arial";
+          text-align: left;
+          margin-top: 10px; }
         #brand .inner .wrap .contents1 article:hover a {
           font-size: 16px; }
     #brand .inner .wrap .contents2 {
       width: 100%;
-      height: 250px; }
+      height: 200px; }
 
   #banner {
-    padding: 60px 30px;
+    padding: 50px 30px;
     box-sizing: border-box; }
     #banner .inner {
       width: 100%; }
       #banner .inner .wrap .contents3 {
-        width: 100%;
-        height: 200px; }
+        display: none; }
       #banner .inner .wrap .contents4 {
         width: 100%;
         padding-left: 0px;
         padding-top: 10px; }
         #banner .inner .wrap .contents4 h1 {
           font: bold 23px/1 "Roboto";
-          margin-bottom: 10px; }
+          margin-bottom: 0px; }
         #banner .inner .wrap .contents4 span {
           margin-bottom: 5px; }
         #banner .inner .wrap .contents4 p {
-          font: 14px/1.4 "Quicksand";
-          margin-bottom: 0; }
+          display: none; }
       #banner .inner .wrap .contents5 {
         margin-top: 20px; }
         #banner .inner .wrap .contents5 .con1 {
