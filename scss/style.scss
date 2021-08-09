@@ -158,16 +158,14 @@ $mobile: 539px;
 
 #header .menuMo {
 	position: fixed;
-	right: -350px;
+	right: -300px;
 	top: 0;
-	width: 350px;
+	width: 300px;
 	height: 100%;
-	opacity: 0.8;
 	background: #eee;
 	padding: 30px;
 	box-sizing: border-box;
 	transition: all 1s;
-	z-index: 3;
 	> h1 {
 		font-size: 30px;
 		text-align: center;
@@ -177,8 +175,8 @@ $mobile: 539px;
 	.gnbMo li a {
 		display: block;
 		width: 100%;
-		padding: 25px 0;
-		font: 16px arial;
+		padding: 40px 0 0;
+		font: 15px arial;
 		text-align: left;
 		color: #555;
 		text-align: center;
@@ -317,7 +315,6 @@ $mobile: 539px;
 					right: 0;
 					transform: rotate(90deg);
 					transition: 0.5s;
-					z-index: 5;
 				}
 
 				h2 {
@@ -735,7 +732,7 @@ $mobile: 539px;
 					margin-bottom: 20px;
 					cursor: pointer;
 					transition: 0.5s;
-					transform: translateY(100px);
+					transform: translateY(120px);
 					opacity: 0;
 					&:nth-of-type(even) {
 						margin-right: 0;
@@ -1083,6 +1080,7 @@ $mobile: 539px;
 					font-size: 35px;
 				}
 			}
+
 			.wrap {
 				.menuWeb {
 					display: none;
@@ -1469,8 +1467,8 @@ $mobile: 539px;
 				.btnCall {
 					display: block;
 					width: 23px;
-					height: 15px;
-					top: 10px;
+					height: 10px;
+					top: 15px;
 					right: 10px;
 					&::before,
 					&::after {
@@ -1622,8 +1620,6 @@ $mobile: 539px;
 			width: 100%;
 			.wrap {
 				.contents3 {
-					//width: 100%;
-					//height: 200px;
 					display: none;
 				}
 				.contents4 {
@@ -1639,8 +1635,6 @@ $mobile: 539px;
 						margin-bottom: 5px;
 					}
 					p {
-						//font: 14px/1.4 "Quicksand";
-						//margin-bottom: 0;
 						display: none;
 					}
 				}
@@ -1654,18 +1648,16 @@ $mobile: 539px;
 						}
 					}
 					.con2 {
-						width: 100%;
-						height: 40vh;
+						display: none;
 					}
 					.con3 {
-						//display: none;
 						width: 100%;
 						padding-left: 0px;
 						.pic {
 							display: none;
 						}
 						.txt {
-							margin-top: 10px;
+							margin-top: 0px;
 							p {
 								font: 12px/1.4 "Quicksand";
 								margin-bottom: 0px;
@@ -1713,7 +1705,7 @@ $mobile: 539px;
 	}
 
 	#news {
-		padding: 0px 30px 200px;
+		padding: 0px 30px 120px;
 		.inner {
 			h1 {
 				font-size: 18px;
@@ -1725,8 +1717,8 @@ $mobile: 539px;
 						width: 100%;
 						margin-right: 0%;
 						margin-bottom: 5px;
-						//transform: translateY(0px);
-						//opacity: 1;
+						transform: translateY(0px);
+						opacity: 1;
 						.pic {
 							width: 100%;
 							height: 20vh;

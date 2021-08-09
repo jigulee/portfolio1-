@@ -23,3 +23,12 @@ function closeSub(el) {
     $(el).children(".sub").stop().slideUp(speed / 2);
     $(el).children("a").removeClass("on");
 }
+
+//skipNavi
+$("#skipNavi li a").on("focusin", function () {
+    $(this).addClass("on");
+});
+
+$("#skipNavi li a").on("focusout", function () {
+    $(this).removeClass("on");
+});

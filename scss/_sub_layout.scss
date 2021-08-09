@@ -819,7 +819,7 @@
 			padding: 0 30px;
 			box-sizing: border-box;
 			> h1 {
-				padding-bottom: 20px;
+				padding-bottom: 10px;
 				a {
 					font-size: 35px;
 				}
@@ -931,7 +931,7 @@
 					display: block;
 					width: 23px;
 					height: 15px;
-					top: 10px;
+					top: 15px;
 					right: 10px;
 					&::before,
 					&::after {
@@ -949,11 +949,11 @@
 	.content {
 		.inner {
 			.sub_visual h1 {
-				font-size: 40px;
-				padding-top: 30px;
+				font-size: 30px;
+				padding-top: 40px;
 			}
 			.sub_visual {
-				height: 100px;
+				height: 70px;
 			}
 		}
 	}

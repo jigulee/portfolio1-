@@ -651,7 +651,7 @@ textarea {
       padding: 0 30px;
       box-sizing: border-box; }
       #sub_header .inner > h1 {
-        padding-bottom: 20px; }
+        padding-bottom: 10px; }
         #sub_header .inner > h1 a {
           font-size: 35px; }
       #sub_header .inner .wrap .menuWeb {
@@ -723,7 +723,7 @@ textarea {
       display: block;
       width: 23px;
       height: 15px;
-      top: 10px;
+      top: 15px;
       right: 10px; }
       #sub_header .inner .wrap .btnCall::before, #sub_header .inner .wrap .btnCall::after {
         height: 2px;
@@ -732,10 +732,10 @@ textarea {
         top: calc(50% - 2px); }
 
   .content .inner .sub_visual h1 {
-    font-size: 40px;
-    padding-top: 30px; }
+    font-size: 30px;
+    padding-top: 40px; }
   .content .inner .sub_visual {
-    height: 100px; }
+    height: 70px; }
 
   /*footer layout*/
   #sub_footer .upper {
@@ -1344,6 +1344,9 @@ textarea {
                 text-align: center;
                 margin: 0 2px;
                 transition: 0.5s; }
+                .community .inner #tab dd#tab1 .pagination .numbers a:nth-of-type(1) {
+                  background: #b0bec5;
+                  color: #fff; }
                 .community .inner #tab dd#tab1 .pagination .numbers a:hover {
                   background: #b0bec5;
                   color: #fff; }
@@ -1718,14 +1721,14 @@ textarea {
 /* Mobile */
 @media screen and (max-width: 539px) {
   .community {
-    padding: 10px 0 150px; }
+    padding: 10px 0 0px; }
     .community .inner #tab {
-      height: 1100px; }
+      height: 1030px; }
       .community .inner #tab dt {
-        height: 40px;
-        top: 30px; }
+        height: 33px;
+        top: 40px; }
         .community .inner #tab dt a {
-          font: bold 12px/40px "Roboto"; }
+          font: bold 12px/33px "Roboto"; }
       .community .inner #tab dd {
         margin-top: 50px; }
         .community .inner #tab dd#tab1 .wrap .search_box {
@@ -1774,40 +1777,49 @@ textarea {
             font: bold 12px/25px arial; }
         .community .inner #tab dd#tab1 .wrap .box3 {
           padding-top: 20px; }
+          .community .inner #tab dd#tab1 .wrap .box3 span {
+            font-size: 11px;
+            padding-left: 5px; }
           .community .inner #tab dd#tab1 .wrap .box3 .box1 {
             width: 100%;
-            height: 100px;
-            margin-bottom: 15px; }
+            height: 85px;
+            margin-bottom: 15px;
+            padding: 13px; }
             .community .inner #tab dd#tab1 .wrap .box3 .box1 > h1 {
-              font-size: 13px; }
-            .community .inner #tab dd#tab1 .wrap .box3 .box1 span {
               font-size: 11px; }
             .community .inner #tab dd#tab1 .wrap .box3 .box1::after {
               width: 85%;
-              top: 50px; }
+              top: 38px;
+              left: 13px; }
             .community .inner #tab dd#tab1 .wrap .box3 .box1 a {
-              height: 30px;
-              font: 11px/30px arial;
-              top: 60px; }
+              height: 25px;
+              font: 10px/25px arial;
+              top: 48px;
+              left: 13px; }
+            .community .inner #tab dd#tab1 .wrap .box3 .box1 span {
+              font-size: 9px; }
           .community .inner #tab dd#tab1 .wrap .box3 .box2 {
             width: 100%;
-            height: 100px; }
+            height: 85px;
+            padding: 13px; }
             .community .inner #tab dd#tab1 .wrap .box3 .box2 > h1 {
-              font-size: 13px; }
+              font-size: 11px; }
             .community .inner #tab dd#tab1 .wrap .box3 .box2::after {
               width: 85%;
-              top: 50px; }
+              top: 38px;
+              left: 13px; }
             .community .inner #tab dd#tab1 .wrap .box3 .box2 > div {
-              height: 30px;
-              top: 60px; }
+              height: 25px;
+              top: 47px;
+              left: 13px; }
               .community .inner #tab dd#tab1 .wrap .box3 .box2 > div p {
-                font: 11px/30px arial; }
+                font: 10px/25px arial; }
           .community .inner #tab dd#tab1 .wrap .box3 h1 {
             font: bold 13px/1 "맑은 고딕"; }
         .community .inner #tab dd#tab2 {
           margin-bottom: 100px; }
           .community .inner #tab dd#tab2 .news {
-            height: 600px; }
+            height: 500px; }
             .community .inner #tab dd#tab2 .news article {
               width: 100%;
               margin-right: 0%;
@@ -1815,26 +1827,24 @@ textarea {
               .community .inner #tab dd#tab2 .news article:nth-of-type(2n) {
                 display: none; }
               .community .inner #tab dd#tab2 .news article .picbox .pic {
-                height: 20vh; }
+                height: 16vh; }
               .community .inner #tab dd#tab2 .news article > h1 {
                 padding: 0 0 10px; }
                 .community .inner #tab dd#tab2 .news article > h1 a {
-                  font: 15px/1 "맑은 고딕"; }
+                  font: 14px/1 "맑은 고딕"; }
               .community .inner #tab dd#tab2 .news article > p {
-                font: 12px/1 "맑은 고딕"; }
-            .community .inner #tab dd#tab2 .news span a {
-              font-size: 16px; }
+                font: 11px/1 "맑은 고딕"; }
+            .community .inner #tab dd#tab2 .news span {
+              display: none; }
           .community .inner #tab dd#tab2 .news2,
           .community .inner #tab dd#tab2 .news3 {
             width: 100%;
-            height: 20vh;
-            margin: 60px 0 100px; }
+            height: 20vh; }
             .community .inner #tab dd#tab2 .news2 article,
             .community .inner #tab dd#tab2 .news3 article {
-              float: none;
-              width: 100%;
+              width: 48%;
               height: 100%;
-              margin-right: 0px;
+              margin-right: 2%;
               margin-bottom: 8px; }
               .community .inner #tab dd#tab2 .news2 article.pic1 > h2 a,
               .community .inner #tab dd#tab2 .news3 article.pic1 > h2 a {
@@ -1851,7 +1861,7 @@ textarea {
                 padding: 5px 0; }
               .community .inner #tab dd#tab2 .news2 article p,
               .community .inner #tab dd#tab2 .news3 article p {
-                font: 13px/1 "맑은 고딕"; }
+                font: 13px/1.4 "맑은 고딕"; }
               .community .inner #tab dd#tab2 .news2 article:hover .pic,
               .community .inner #tab dd#tab2 .news3 article:hover .pic {
                 transform: scale(1.1); }
@@ -2966,16 +2976,14 @@ textarea {
 
 #header .menuMo {
   position: fixed;
-  right: -350px;
+  right: -300px;
   top: 0;
-  width: 350px;
+  width: 300px;
   height: 100%;
-  opacity: 0.8;
   background: #eee;
   padding: 30px;
   box-sizing: border-box;
-  transition: all 1s;
-  z-index: 3; }
+  transition: all 1s; }
   #header .menuMo > h1 {
     font-size: 30px;
     text-align: center;
@@ -2984,8 +2992,8 @@ textarea {
   #header .menuMo .gnbMo li a {
     display: block;
     width: 100%;
-    padding: 25px 0;
-    font: 16px arial;
+    padding: 40px 0 0;
+    font: 15px arial;
     text-align: left;
     color: #555;
     text-align: center; }
@@ -3095,8 +3103,7 @@ textarea {
           top: -15px;
           right: 0;
           transform: rotate(90deg);
-          transition: 0.5s;
-          z-index: 5; }
+          transition: 0.5s; }
         #visual .list li .pic h2 {
           font: normal 18px/1 "Montserrat";
           letter-spacing: 1px;
@@ -3402,7 +3409,7 @@ textarea {
           margin-bottom: 20px;
           cursor: pointer;
           transition: 0.5s;
-          transform: translateY(100px);
+          transform: translateY(120px);
           opacity: 0; }
           #news .inner .wrap .newsbox article:nth-of-type(even) {
             margin-right: 0; }
@@ -3926,8 +3933,8 @@ textarea {
     #header .inner .wrap .btnCall {
       display: block;
       width: 23px;
-      height: 15px;
-      top: 10px;
+      height: 10px;
+      top: 15px;
       right: 10px; }
       #header .inner .wrap .btnCall::before, #header .inner .wrap .btnCall::after {
         height: 2px;
@@ -4049,15 +4056,14 @@ textarea {
           #banner .inner .wrap .contents5 .con1 > p {
             display: none; }
         #banner .inner .wrap .contents5 .con2 {
-          width: 100%;
-          height: 40vh; }
+          display: none; }
         #banner .inner .wrap .contents5 .con3 {
           width: 100%;
           padding-left: 0px; }
           #banner .inner .wrap .contents5 .con3 .pic {
             display: none; }
           #banner .inner .wrap .contents5 .con3 .txt {
-            margin-top: 10px; }
+            margin-top: 0px; }
             #banner .inner .wrap .contents5 .con3 .txt p {
               font: 12px/1.4 "Quicksand";
               margin-bottom: 0px; }
@@ -4086,14 +4092,16 @@ textarea {
           font-size: 13px; }
 
   #news {
-    padding: 0px 30px 200px; }
+    padding: 0px 30px 120px; }
     #news .inner h1 {
       font-size: 18px;
       margin-bottom: 20px; }
     #news .inner .wrap .newsbox article {
       width: 100%;
       margin-right: 0%;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      transform: translateY(0px);
+      opacity: 1; }
       #news .inner .wrap .newsbox article .pic {
         width: 100%;
         height: 20vh; }
